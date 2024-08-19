@@ -1,6 +1,6 @@
 # Welcome to the first part of the dlt Workshop!
 
-![welcome-michael-scott.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/775f89b5-30e8-42e6-a412-d1736f9fb013/f873855f-5068-4735-9232-e241fe65aa65/welcome-michael-scott.gif)
+![welcome-michael-scott.gif](welcome-michael-scott.gif)
 
 In this course you will learn the fundamentals of dlt alongside some of the most important topics in the world of Pythonic data engineering.
 
