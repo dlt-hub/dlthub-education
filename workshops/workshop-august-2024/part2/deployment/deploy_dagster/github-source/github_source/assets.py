@@ -2,7 +2,7 @@
 from dagster import AssetExecutionContext
 from dagster_embedded_elt.dlt import DagsterDltResource, dlt_assets
 from dlt import pipeline
-from .github_resources import github_source
+from .github_pipeline import github_source
 
 
 @dlt_assets(
@@ -11,6 +11,7 @@ from .github_resources import github_source
         pipeline_name="github_issues",
         dataset_name="github",
         destination="duckdb",
+        progress="log",
     ),
     name="github",
     group_name="github",
