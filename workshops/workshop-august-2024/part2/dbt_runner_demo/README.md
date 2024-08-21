@@ -1,0 +1,14 @@
+# Using `dlt`'s dbt runner!
+
+Here are the steps to replicate this project:
+1. Install `dlt[duckdb]` if you haven't already: `pip install dlt[duckdb]`
+2. Create the pipeline you'd like to eventually modify. 
+   - This can be found in `ingestion.py`. 
+   - The pipeline created is of GitHub issues.  
+3. Optional step: create a file to be able to directly query your destination if needed. I wanted to have a CMD interface to query the `duckdb` destination; this is the purpose of `query.py`.
+4. Install `dbt` with `duckdb` support: `pip install dbt-duckdb`
+5. Initiate the dbt project: `dbt init workshop_demo`
+6. Add the transformations you'd like to the dbt project.
+   - Create the schema in YAML file for the tables you'd like to add/model. In this project, we'll be creating a master table for the issues. It can be found in `workshop_demo/models/schema.yaml`. 
+   - To add the query for this model, place it in the `models` folder. Here, it is `workshop_demo/models`.
+7. Now that we have added our dbt model(s). We can create a new dataset in our destination to hold these transformed tables, and run our dbt models. In this project, this can be found in `modeling.py`. 
