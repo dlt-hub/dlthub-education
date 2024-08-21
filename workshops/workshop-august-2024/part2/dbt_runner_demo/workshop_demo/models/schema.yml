@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: issues_master
+    description: This table has basic information about issues.
+
+    columns:
+      - name: id
+        description: This is a unique identifier for a issue
+        tests:
+          - unique
+
+      - name: url
+      - name: node_id
+      - name: title
+      - name: user__login
+      - name: user__id
+      - name: created_at
+      - name: updated_at
+      - name: pull_request__url
+      - name: assignee_url
+      - name: assignee_login
+      - name: assignee_id
+      - name: label
