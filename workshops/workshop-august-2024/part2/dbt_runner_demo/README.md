@@ -2,7 +2,7 @@
 
 The combination of dlt and dbt (via the dbt runner) provides a powerful and flexible solution for data loading and transformation! This combination offers end-to-end cross-database compatibility. This feature allows you to load data from a variety of sources into your database using dlt, and then transform it using dbt, irrespective of the database type.
 
-Here are the steps to replicate this project:
+## Here are the steps to replicate this project:
 
 1. Install `dlt[duckdb]` if you haven't already: `pip install dlt[duckdb]`
 2. Create the pipeline you'd like to eventually modify. 
