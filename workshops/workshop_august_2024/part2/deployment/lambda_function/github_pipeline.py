@@ -30,6 +30,7 @@ def lambda_handler(event, context):
         )
         yield pagination(url)
 
+
     pipeline = dlt.pipeline(
         pipeline_name="github_issues_merge",
         destination="duckdb",

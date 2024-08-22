@@ -34,3 +34,15 @@ def get_issues(
 @dlt.source
 def github_source():
     return get_issues()
+
+
+if __name__ == "__main__":
+    pipeline = dlt.pipeline(
+        pipeline_name="github_issues_merge",
+        destination="duckdb",
+        dataset_name="github_data_merge",
+    )
+
+    load_info = pipeline.run(github_source())
+    print(pipeline.last_trace.last_normalize_info)
+    print(load_info)
