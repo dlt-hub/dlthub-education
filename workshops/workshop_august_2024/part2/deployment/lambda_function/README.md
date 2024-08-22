@@ -91,19 +91,7 @@ def lambda_handler(event, context):
 2. **Save**:
     - After editing the code or uploading your file, click **Deploy** to save your changes.
 
-## 3. Configure the Lambda Function
-
-### **Step1: Set Environment Variables**
-
-- Set follows ENVs in **Configuration → Environment variables**:
-    - DLT_DATA_DIR=/tmp
-    - DESTINATION__DUCKDB__CREDENTIALS=duckdb:////tmp/github_issues_merge.duckdb
-
-### **Step 2: Increase Memory and Timeout**
-
-- Adjust the memory and timeout settings according to your script's needs under: **Configuration → General configuration → Edit → Timeout/Memory**
-
-## 4. Create the layer with dependencies: dlt, duckdb
+## 3. Create the layer with dependencies: dlt, duckdb
 
 ### Step 1: Set Up a Docker Environment for `arm64`
 
@@ -245,7 +233,19 @@ The easiest way to ensure that your dependencies are compatible with the `linux/
 4. **Deploy and Test**:
     
     Save your changes, deploy the function, and test it to ensure that everything works as expected.
-    
+
+## 4. Configure the Lambda Function
+
+### **Step1: Set Environment Variables**
+
+- Set follows ENVs in **Configuration → Environment variables**:
+    - DLT_DATA_DIR=/tmp
+    - DESTINATION__DUCKDB__CREDENTIALS=duckdb:////tmp/github_issues_merge.duckdb
+
+### **Step 2: Increase Memory and Timeout**
+
+- Adjust the memory and timeout settings according to your script's needs under: **Configuration → General configuration → Edit → Timeout/Memory**
+
 
 ## 5. Test your Lambda Function
 
