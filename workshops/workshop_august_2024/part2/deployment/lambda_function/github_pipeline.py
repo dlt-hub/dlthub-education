@@ -5,7 +5,6 @@ def lambda_handler(event, context):
     BASE_URL = "https://api.github.com/repos/dlt-hub/dlt/issues"
 
     def pagination(url):
-
         while True:
             response = requests.get(url)
             response.raise_for_status()
@@ -40,5 +39,6 @@ def lambda_handler(event, context):
     load_info = pipeline.run(get_issues())
     print(pipeline.last_trace.last_normalize_info)
     print(load_info)
+    assert len(load_info.loads_ids) == 1
 
-    return load_info
+    return {"status": "success"}

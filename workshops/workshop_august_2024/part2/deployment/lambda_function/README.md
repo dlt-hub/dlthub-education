@@ -33,7 +33,7 @@ Create a Python script that utilizes the dlt package.
 ```python
 def lambda_handler(event, context):
     import dlt
-    ....
+    ...
     pipeline = dlt.pipeline(
         pipeline_name="github_issues_merge",
         destination="duckdb",
@@ -43,8 +43,9 @@ def lambda_handler(event, context):
     load_info = pipeline.run(get_issues())
     print(pipeline.last_trace.last_normalize_info)
     print(load_info)
+    assert len(load_info.loads_ids) == 1
 
-    return load_info
+    return {"status": "success"}
 ```
 
 ### Step 2: Log in to the AWS Management Console
