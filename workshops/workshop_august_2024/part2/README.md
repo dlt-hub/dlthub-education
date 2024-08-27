@@ -9,10 +9,10 @@ This workshop is designed to deepen your understanding of advanced topics in dlt
 ## 1. **[Custom incremental loading](https://colab.research.google.com/drive/15c2PSsqB6Wlsx4soKV8a-QEGIuJKdmAc)** 
 Implement custom strategies for incremental loading using `last_value_func`. These methods will help you efficiently manage data updates and ensure your pipelines are always up to date.
 
-## 2. **[Schema Configuration & Data Contracts](https://colab.research.google.com/drive/1BOUvAzP7_H0NvXhZOtNsJO-Nn3c30dXL?usp=sharing)** 
+## 2. **[Schema Configuration & Data Contracts](https://colab.research.google.com/drive/1BOUvAzP7_H0NvXhZOtNsJO-Nn3c30dXL)** 
 Delve into schema configuration and data contracts. This module covers setting data types, enabling autodetection, and establishing data contracts to ensure data integrity and consistency across your pipelines.
     
-## 3. **[Tracing, Logging](https://colab.research.google.com/drive/1BOUvAzP7_H0NvXhZOtNsJO-Nn3c30dXL)**
+## 3. **[Tracing, Logging](https://colab.research.google.com/drive/1JdgwPlnKJ4oCDEIX7_dzzJhS9oqaGNv7)**
 Gain expertise in configuring logging with Sentry, managing logging levels. This will help you monitor and debug your pipelines more effectively.
 
 ## 4. **[Retries](https://colab.research.google.com/drive/1wqeIv0nD6S9r8ImJEbZ_PYBgeE3C3kMO)** 
