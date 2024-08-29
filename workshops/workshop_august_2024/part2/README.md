@@ -38,3 +38,7 @@ Implement custom destinations for your data pipelines. This section will show yo
 ## 9. **[Deployment](./deployment/)** 
     
 Learn how to deploy your pipelines using popular tools like Lambda, Airflow, or Dagster. This module ensures that your pipelines are not only functional but also ready for production environments.
+
+## That’s it! 🎉
+
+You finished the second dlt workshop! As a summary of everything we covered in this course, there’s a homework quiz for you to go through. Hopefully it’ll refresh your memory on everything we covered. Here you go: https://forms.gle/xfaWFSYq1vKc96EJA
