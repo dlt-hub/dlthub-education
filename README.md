@@ -4,24 +4,9 @@ In this repository we will store all materials for workshops, courses, etc.
 
 ## Workshops
 
-1. [Workshop August 2024 Part1:  dlt fundamentals](https://lu.ma/1u4vq72i):
-   - Location: [workshops/workshop_august_2024/part1](workshops/workshop_august_2024/part1)
-   - Content:
-       - How dlt works under the hood;
-       - Create your first pipeline;
-       - Understand dlt’s sources and resources;
-       - Explore destinations;
-       - Deduplicate your data with incremental loading;
-       - Understand dlt state, schema management, and metadata.
-2. [Workshop August 2024: Go-to-production](https://lu.ma/v1glf6qk)
-   - Location: [workshops/workshop_august_2024/part2](workshops/workshop_august_2024/part2)
-   - Content:
-     - Custom incremental loading
-     - Schema Configuration & Data Contracts
-     - Tracing, Logging & Retries
-     - Performance Optimization
-     - Custom sources with RestAPI helpers
-     - Custom destinations: Reverse ETL
-     - Deployment with AWS Lambda, Dagster & Airflow
-     - Bonus: dbt Runner
+1. Workshop ELT with DLT August 2024:
+   - Location: [workshops/workshop_august_2024](workshops/workshop_august_2024)
+2. Workshop ELT with DLT 2.0 September 2024:
+   - Location: [workshops/workshop_september_2024](workshops/workshop_september_2024)
+
 
