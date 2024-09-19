@@ -58,6 +58,7 @@ dlt creates and manages the schema automatically, but what if you want to contro
 After having learnt about pipelines and how to move data from one place to another. We now learn about information about the pipeline itself. Or, metadata of a pipeline that can be accessed and edited through dlt.
 This notebook explores `dlt` states, what it collected and where this *extra* information is stored. It also expands a bit more on what the load info and trace in `dlt` is capable of.
 
+### [P.S presentation](https://docs.google.com/presentation/d/1Zklxe8z-77RRfF6sPhWV9RhGjhy8kwW5gavAdHe8ny8/edit?usp=sharing) 
 
 ## That’s it! 🎉
 
