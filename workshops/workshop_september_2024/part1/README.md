@@ -8,7 +8,7 @@ In this course you will learn the fundamentals of dlt alongside some of the most
 
 ### 0. Presentation: [Kickoff](https://docs.google.com/presentation/d/1KeTJ_MHpCxmjGTkEhpv5-UYcwpil76adbXUlzA59lFM/edit?usp=sharing)
 
-This will introduce you the concept of ETL, best practices in DE, and the biggest troubles a person can have in their Data Engineering duties. 
+This will introduce you the concept of ELT, best practices in DE, and the biggest troubles a person can have in their Data Engineering duties. 
 
 It’ll move ahead with introducing `dlt` - as the solution to many of these problems right within Python.
 
