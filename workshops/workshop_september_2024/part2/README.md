@@ -1,6 +1,9 @@
 # Welcome to the second part of the ELT with DLT Workshop 2.0!
 
-![hi.gif](hi.gif)
+<p align="center">
+  <img src="hi.gif" alt="hi.gif" />
+</p>
+
 
 In this part of the course, you will get hands-on experience with `dlt` and the world of Pythonic data engineering as you deepen your understanding of topics previously touched upon.
 
