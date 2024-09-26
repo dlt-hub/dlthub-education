@@ -13,5 +13,10 @@
 2. Workshop Part 2: Go-to-production
    - Location: [workshops/workshop_september_2024/part2](part2)
    - Content:
-        - TBA
+     - Custom incremental loading
+     - Data Contracts
+     - Tracing, Logging & Retries
+     - Performance optimization
+     - Custom source: Rest API helpers
+     - Custom destinations: Reverse ETL
 
