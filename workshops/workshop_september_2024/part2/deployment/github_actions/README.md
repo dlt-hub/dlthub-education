@@ -59,7 +59,7 @@ git push origin
 ## Monitor (and manually trigger) the pipeline
 
 The pipeline is now running every 30 minutes as you have scheduled. The `dlt deploy` command line
-tool printed out a `github.com/.../actions/workflows/run_chess_workflow.yml` link where you can
+tool printed out a `github.com/.../actions/workflows/run_github_issues_merge_workflow.yml` link where you can
 monitor (and manually trigger) the GitHub Actions workflow that runs your pipeline in your
 repository.
 
