@@ -9,6 +9,7 @@
        - Explore destinations;
        - Deduplicate your data with incremental loading;
        - Understand dlt state, schema management, and metadata.
+   - Youtube recording: https://youtube.com/live/kn2CM7RH2yU?feature=share
 2. [Workshop August 2024 Part 2: Go-to-production](https://lu.ma/v1glf6qk)
    - Location: [workshops/workshop_august_2024/part2](part2)
    - Content:
@@ -20,4 +21,5 @@
      - Custom destinations: Reverse ETL
      - Deployment with AWS Lambda, Dagster & Airflow
      - Bonus: dbt Runner
+   - Youtube recording: https://www.youtube.com/live/8dmu33nVU7s?si=Rgk5vSlZzvC5zCsw
 
