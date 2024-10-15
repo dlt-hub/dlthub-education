@@ -1,0 +1,6 @@
+github_issues_project:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: ':external:'  # Tells DuckDB that we are working with external files

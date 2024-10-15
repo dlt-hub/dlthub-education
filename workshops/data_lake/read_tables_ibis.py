@@ -35,9 +35,9 @@ def transform_data():
 
 if __name__ == "__main__":
     pipeline = dlt.pipeline(
-        pipeline_name="github_data_lake_transformed",
+        pipeline_name="github_data_lake_ibis",
         destination="duckdb",
-        dataset_name="github_transformed",
+        dataset_name="github_transformed_ibis",
     )
 
     load_info = pipeline.run(transform_data())

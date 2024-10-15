@@ -1,0 +1,5 @@
+version: 2
+sources:
+  - name: github_raw
+    tables:
+      - name: issues
