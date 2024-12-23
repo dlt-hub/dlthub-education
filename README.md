@@ -2,6 +2,11 @@
 
 In this repository we will store all materials for workshops, courses, etc.
 
+## Courses
+
+1. Holiday Self-Paced Course 2024: dlt Fundamentals:
+   - Location: [courses/dlt_fundamentals_dec_2024](courses/dlt_fundamentals_dec_2024)
+
 ## Workshops
 
 1. Workshop "Data Engineering Zoomcamp 2024: Data ingestion with dlt":
