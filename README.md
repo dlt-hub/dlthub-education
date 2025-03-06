@@ -17,7 +17,7 @@ In this repository we will store all materials for workshops, courses, etc.
    - Location: [workshops/workshop_august_2024](workshops/workshop_august_2024)
 1. Workshop "ELT with DLT 2.0 September 2024":
    - Location: [workshops/workshop_september_2024](workshops/workshop_september_2024)
-1. Workshop "Build a Portable Data Lake" (08.11.2024):
+1. Workshop "Build a Portable Data Lake" (2024-11-08):
    - Location: [workshops/portable_data_lake](workshops/portable_data_lake) 
 
 ## Webinars
