@@ -50,7 +50,7 @@ there’s a **homework** quiz for you to go through. Hopefully it’ll refresh y
 
 Here you go: https://forms.gle/LRohLeRYKsfCfQaTA
 
-Submit your application before **January 17th**, 2025, score at least **70% of the points**, and get certified!
+Submit your application before **March 31st**, 2025, score at least **70% of the points**, and get certified!
 
 ### Feedback
 
