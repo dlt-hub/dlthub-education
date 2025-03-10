@@ -19,8 +19,10 @@ In this repository we will store all materials for workshops, courses, etc.
    - Location: [workshops/workshop_september_2024](workshops/workshop_september_2024)
 1. Workshop "Build a Portable Data Lake" (2024-11-08):
    - Location: [workshops/portable_data_lake](workshops/portable_data_lake)
-1. Workshop "Data Engineering Zoomcamp 2025: Data Ingestion with dlt":
-   - Location: [DataTalksClub/data-engineering-zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/cohorts/2025/workshops/dlt) 
+1. Workshop "Data Engineering Zoomcamp 2025: Data Ingestion with dlt": (2025-02-10)
+   - Location: [DataTalksClub/data-engineering-zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/cohorts/2025/workshops/dlt)
+1. Workshop "Fast & Scalable Analytics Pipelines with MotherDuck & dltHub" (2025-02-26)
+   - Location: [Zoom recording](https://zoom.us/rec/play/fNuqdtPLD3wpe502xu4ooMS314oriOEOgZqJlyWI2CUJn-gLc-r09iuoqHlv5daGbof817AzH1M-eMHy.1C5juK0nss2Wczc1?accessLevel=meeting&canPlayFromShare=true&from=share_recording_detail&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fzoom.us%2Frec%2Fshare%2FV_lFbpaxnkouJsr9tAStz4zfa1_neKwFQyNTolBajNZUJiFabYX0-nytuOayCtyn.yfaYRZWgdYrLwOBy)
 
 ## Webinars
 1. Webinar GDPR/HIPAA September 2024:
