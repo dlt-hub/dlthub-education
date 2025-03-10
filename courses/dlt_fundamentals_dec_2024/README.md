@@ -6,7 +6,7 @@ In this course you will learn the fundamentals of dlt alongside some of the most
 
 ## **Here’s what we’ll be covering:**
 
-### Lesson 1: [Quick Start](https://colab.research.google.com/drive/1QwlDWxX5hvwbHMkCgiF0UCzGFRMRoSPY?usp=sharing)
+### Lesson 1: [Quick Start](https://colab.research.google.com/drive/1QwlDWxX5hvwbHMkCgiF0UCzGFRMRoSPY#forceEdit=true&sandboxMode=true)
 
 Discover what dlt is, run your first pipeline with toy data, and explore it like a pro using DuckDB, `sql_client`, and dlt datasets!
 
