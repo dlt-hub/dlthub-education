@@ -18,7 +18,9 @@ In this repository we will store all materials for workshops, courses, etc.
 1. Workshop "ELT with DLT 2.0 September 2024":
    - Location: [workshops/workshop_september_2024](workshops/workshop_september_2024)
 1. Workshop "Build a Portable Data Lake" (2024-11-08):
-   - Location: [workshops/portable_data_lake](workshops/portable_data_lake) 
+   - Location: [workshops/portable_data_lake](workshops/portable_data_lake)
+1. Workshop "Data Engineering Zoomcamp 2025: Data Ingestion with dlt":
+   - Location: [DataTalksClub/data-engineering-zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/cohorts/2025/workshops/dlt) 
 
 ## Webinars
 1. Webinar GDPR/HIPAA September 2024:
