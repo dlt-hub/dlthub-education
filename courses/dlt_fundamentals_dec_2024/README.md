@@ -10,33 +10,33 @@ In this course you will learn the fundamentals of dlt alongside some of the most
 
 Discover what dlt is, run your first pipeline with toy data, and explore it like a pro using DuckDB, `sql_client`, and dlt datasets!
 
-### Lesson 2: [dlt Resources and Sources](https://colab.research.google.com/drive/1tc94GvIoYXmYrjUibDhY_9iPR5zA0Eyw?usp=sharing)
+### Lesson 2: [dlt Resources and Sources](https://colab.research.google.com/drive/1tc94GvIoYXmYrjUibDhY_9iPR5zA0Eyw#forceEdit=true&sandboxMode=true)
 
 Learn to run pipelines with diverse data sources (dataframes, databases, and REST APIs), 
 master `dlt.resource`, `dlt.source`, and `dlt.transformer`, and create your first REST API pipeline!
 
-### Lesson 3: [Pagination & Authentication & dlt Configuration](https://colab.research.google.com/drive/1-jVNzMJTRYHhbRlXgGFlhMwdML1L9zMx?usp=sharing)
+### Lesson 3: [Pagination & Authentication & dlt Configuration](https://colab.research.google.com/drive/1-jVNzMJTRYHhbRlXgGFlhMwdML1L9zMx#forceEdit=true&sandboxMode=true)
 
 Since it is never a good idea to publicly put your API keys into your code, different environments have different methods to set and access these secret keys. `dlt` is no different.
 Master pagination and authentication for REST APIs, explore dlt's RESTClient and manage secrets and configs.
 
-### Lesson 4: [Using dlt’s pre-built Sources and Destinations](https://colab.research.google.com/drive/1mfqZulsuFDc7h27d6joe2_Dduvl1uM-2?usp=sharing)
+### Lesson 4: [Using dlt’s pre-built Sources and Destinations](https://colab.research.google.com/drive/1mfqZulsuFDc7h27d6joe2_Dduvl1uM-2#forceEdit=true&sandboxMode=true)
 Now that you took a data source and loaded it into a `duckdb` destination, it is time to look into what other possibilities `dlt` offers.
 In this notebook we will take a look at pre-built verified sources and destinations and how to use them.
 
-### Lesson 5: [Write disposition and incremental loading](https://colab.research.google.com/drive/1Zf24gIVMNNj9j-gtXFl8p0orI9ttySDn?usp=sharing)
+### Lesson 5: [Write disposition and incremental loading](https://colab.research.google.com/drive/1Zf24gIVMNNj9j-gtXFl8p0orI9ttySDn#forceEdit=true&sandboxMode=true)
 
 Learn to control data behavior with dlt write dispositions (Append, Replace, Merge), master incremental loading, and efficiently update and deduplicate your datasets.
 
-### Lesson 6: [How dlt works](https://colab.research.google.com/drive/1geSMNRkSwAelQJKd3e8vdoHCKiHMdmIo?usp=sharing)
+### Lesson 6: [How dlt works](https://colab.research.google.com/drive/1geSMNRkSwAelQJKd3e8vdoHCKiHMdmIo#forceEdit=true&sandboxMode=true)
 
 Discover the magic behind `dlt`! Learn its three main steps — Extract, Normalize, Load — along with default behaviors and supported file formats.
 
-### Lesson 7: [Inspecting & Adjusting Schema](https://colab.research.google.com/drive/1LokUcM5YSazdq5jfbkop-Z5rmP-39y4r?usp=sharing)
+### Lesson 7: [Inspecting & Adjusting Schema](https://colab.research.google.com/drive/1LokUcM5YSazdq5jfbkop-Z5rmP-39y4r#forceEdit=true&sandboxMode=true)
 
 dlt creates and manages the schema automatically, but what if you want to control it yourself? Explore the schema and customize it to your needs easily with dlt!
 
-### Lesson 8: [Understanding Pipeline Metadata](https://colab.research.google.com/drive/1jp5UtydA3x9cAq-fbW2tRmAOl4LMZqM1?usp=sharing)
+### Lesson 8: [Understanding Pipeline Metadata](https://colab.research.google.com/drive/1jp5UtydA3x9cAq-fbW2tRmAOl4LMZqM1#forceEdit=true&sandboxMode=true)
 
 After having learnt about pipelines and how to move data from one place to another. We now learn about information about the pipeline itself. Or, metadata of a pipeline that can be accessed and edited through dlt.
 This notebook explores `dlt` states, what it collected and where this *extra* information is stored. It also expands a bit more on what the load info and trace in `dlt` is capable of.
