@@ -36,7 +36,7 @@ Discover the magic behind `dlt`! Learn its three main steps — Extract, Normali
 
 dlt creates and manages the schema automatically, but what if you want to control it yourself? Explore the schema and customize it to your needs easily with dlt!
 
-### Lesson 8: [Understanding Pipeline Metadata](https://colab.research.google.com/drive/1jp5UtydA3x9cAq-fbW2tRmAOl4LMZqM1#forceEdit=true&sandboxMode=true)
+### Lesson 8: [Understanding Pipeline State & Metadata](https://colab.research.google.com/drive/1jp5UtydA3x9cAq-fbW2tRmAOl4LMZqM1#forceEdit=true&sandboxMode=true)
 
 After having learnt about pipelines and how to move data from one place to another. We now learn about information about the pipeline itself. Or, metadata of a pipeline that can be accessed and edited through dlt.
 This notebook explores `dlt` states, what it collected and where this *extra* information is stored. It also expands a bit more on what the load info and trace in `dlt` is capable of.
