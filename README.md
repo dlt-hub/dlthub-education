@@ -7,7 +7,7 @@ In this repository we will store all materials for workshops, courses, etc.
 1. Holiday Self-Paced Course 2024: dlt Fundamentals:
    - Location: [courses/dlt_fundamentals_dec_2024](courses/dlt_fundamentals_dec_2024)
 2. Freecodecamp: Data Engineering with Python and AI – Data Loading Tutorial
-   - Location: [courses/freecodecamp/de_with_dlt_2025]
+   - Location: [courses/freecodecamp/de_with_dlt_2025](courses/freecodecamp/de_with_dlt_2025)
 
 ## Workshops
 
