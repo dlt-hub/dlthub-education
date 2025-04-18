@@ -26,7 +26,7 @@ this course will give you the skills and tools to do it efficiently — with cle
 
 ## Resources
 
-- Youtube video: TBA
-- Google Colabs Notebooks:
+- Youtube video: https://youtu.be/T23Bs75F7ZQ
+- Google Colab Notebooks:
     - Part 1: [Introduction into Data Ingestion](https://colab.research.google.com/drive/1nQt6G6gNyIlJuKi_X-RMwbUyYDdkPI9k#forceEdit=true&sandboxMode=true)
     - Part 2: [Data Ingestion with dlt](https://colab.research.google.com/drive/1-wMCZFb-9W9G_-welq-TrizPH2XzsgQi#scrollTo=WUBXXfhCIpir&forceEdit=true&sandboxMode=true)
