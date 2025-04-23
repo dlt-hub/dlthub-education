@@ -37,7 +37,7 @@ Track every step of your pipeline: from extraction to load. Use logs, traces, an
 ### [**Lesson 9: Performance Optimization**](https://colab.research.google.com/drive/11P5O2R40ExtFtPfX4o1O5mF7nFbibtuZ#forceEdit=true&sandboxMode=true)
 Handle large datasets, tune buffer sizes, parallelize resource extraction, optimize memory usage, and reduce pipeline runtime.
 
-### [**Lesson 10: Deployment with Lambda, Airflow, or Dagster**](./deployment)
+### [**Lesson 10: Deployment with GitHub Actions, Lambda, Airflow, or Dagster**](./deployment)
 Bring your pipelines into production. Learn how to run dlt on AWS Lambda, GitHub Actions, DAGs in Airflow, or within Dagster projects. 
 
 ## Homework & certification
