@@ -1,5 +1,7 @@
 # Welcome to the self-paced **dlt Advanced Holiday Course!**
 
+![welcome](welcome-hello.gif)
+
 *Ready to level up your pipelines and build like a pro?*
 
 In this course, you'll go far beyond the basics. You’ll build custom sources, integrate with complex APIs and databases, control how your data lands in warehouses or files, transform it, and deploy pipelines in real-world production environments like Airflow or Lambda.
