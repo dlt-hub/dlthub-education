@@ -27,6 +27,10 @@ In this repository we will store all materials for workshops, courses, etc.
    - Location: [DataTalksClub/data-engineering-zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/cohorts/2025/workshops/dlt)
 1. Workshop "Fast & Scalable Analytics Pipelines with MotherDuck & dltHub" (2025-02-26)
    - Location: [Zoom recording](https://zoom.us/rec/play/fNuqdtPLD3wpe502xu4ooMS314oriOEOgZqJlyWI2CUJn-gLc-r09iuoqHlv5daGbof817AzH1M-eMHy.1C5juK0nss2Wczc1?accessLevel=meeting&canPlayFromShare=true&from=share_recording_detail&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fzoom.us%2Frec%2Fshare%2FV_lFbpaxnkouJsr9tAStz4zfa1_neKwFQyNTolBajNZUJiFabYX0-nytuOayCtyn.yfaYRZWgdYrLwOBy)
+1. Workshop "dlt + Microsoft Fabric + MotherDuck by Rakesh Gupta with Certification" (2025-07-05)
+   - Location: [Youtube recording](https://www.youtube.com/live/wca8DnKucBM)
+   - Materials: [Rakesh's repository](https://github.com/sketchmyview/fabric-dlthub-series/blob/main/README.md)
+   - Certification (Deadline is June 7th, 2025): [Google Form](https://forms.gle/Z22LEJxf9SVj891z5)
 
 ## Webinars
 1. Webinar GDPR/HIPAA September 2024:
