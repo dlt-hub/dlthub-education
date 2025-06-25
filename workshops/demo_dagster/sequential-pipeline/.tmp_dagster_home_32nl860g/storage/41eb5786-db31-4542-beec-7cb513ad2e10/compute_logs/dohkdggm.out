@@ -1,0 +1,485 @@
+psutil dependency is not installed and mem stats will not be available. add psutil to your environment or pass dump_system_stats argument as False to disable warning.
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/5 (0.0%) | Time: 0.00s | Rate: 0.00/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/5 (0.0%) | Time: 0.19s | Rate: 0.00/s
+customers: 100  | Time: 0.00s | Rate: 32263876.92/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/5 (0.0%) | Time: 0.75s | Rate: 0.00/s
+customers: 100  | Time: 0.56s | Rate: 177.93/s
+orders: 100  | Time: 0.00s | Rate: 24672376.47/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/5 (0.0%) | Time: 0.93s | Rate: 0.00/s
+customers: 100  | Time: 0.74s | Rate: 135.03/s
+orders: 100  | Time: 0.18s | Rate: 560.11/s
+items: 100  | Time: 0.00s | Rate: 32263876.92/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/5 (0.0%) | Time: 1.24s | Rate: 0.00/s
+customers: 100  | Time: 1.04s | Rate: 95.88/s
+orders: 100  | Time: 0.48s | Rate: 207.92/s
+items: 100  | Time: 0.30s | Rate: 330.67/s
+products: 10  | Time: 0.00s | Rate: 1677721.60/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/5 (0.0%) | Time: 1.48s | Rate: 0.00/s
+customers: 100  | Time: 1.28s | Rate: 77.91/s
+orders: 100  | Time: 0.72s | Rate: 138.60/s
+items: 100  | Time: 0.54s | Rate: 184.17/s
+products: 10  | Time: 0.24s | Rate: 41.57/s
+supplies: 65  | Time: 0.00s | Rate: 20971520.00/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 2/5 (40.0%) | Time: 2.67s | Rate: 0.75/s
+customers: 200  | Time: 2.48s | Rate: 80.67/s
+orders: 200  | Time: 1.92s | Rate: 104.31/s
+items: 200  | Time: 1.74s | Rate: 115.02/s
+products: 10  | Time: 1.44s | Rate: 6.96/s
+supplies: 65  | Time: 1.20s | Rate: 54.35/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 2/5 (40.0%) | Time: 3.93s | Rate: 0.51/s
+customers: 400  | Time: 3.74s | Rate: 107.01/s
+orders: 300  | Time: 3.18s | Rate: 94.46/s
+items: 300  | Time: 3.00s | Rate: 100.08/s
+products: 10  | Time: 2.70s | Rate: 3.71/s
+supplies: 65  | Time: 2.45s | Rate: 26.48/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 2/5 (40.0%) | Time: 5.14s | Rate: 0.39/s
+customers: 500  | Time: 4.94s | Rate: 101.16/s
+orders: 500  | Time: 4.38s | Rate: 114.14/s
+items: 400  | Time: 4.20s | Rate: 95.19/s
+products: 10  | Time: 3.90s | Rate: 2.56/s
+supplies: 65  | Time: 3.66s | Rate: 17.76/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 2/5 (40.0%) | Time: 6.24s | Rate: 0.32/s
+customers: 600  | Time: 6.04s | Rate: 99.30/s
+orders: 600  | Time: 5.48s | Rate: 109.49/s
+items: 500  | Time: 5.30s | Rate: 94.31/s
+products: 10  | Time: 5.00s | Rate: 2.00/s
+supplies: 65  | Time: 4.76s | Rate: 13.66/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 2/5 (40.0%) | Time: 7.43s | Rate: 0.27/s
+customers: 700  | Time: 7.24s | Rate: 96.69/s
+orders: 700  | Time: 6.68s | Rate: 104.83/s
+items: 600  | Time: 6.50s | Rate: 92.32/s
+products: 10  | Time: 6.20s | Rate: 1.61/s
+supplies: 65  | Time: 5.96s | Rate: 10.91/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 2/5 (40.0%) | Time: 8.95s | Rate: 0.22/s
+customers: 800  | Time: 8.75s | Rate: 91.39/s
+orders: 800  | Time: 8.19s | Rate: 97.66/s
+items: 800  | Time: 8.01s | Rate: 99.83/s
+products: 10  | Time: 7.71s | Rate: 1.30/s
+supplies: 65  | Time: 7.47s | Rate: 8.70/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 2/5 (40.0%) | Time: 10.21s | Rate: 0.20/s
+customers: 900  | Time: 10.02s | Rate: 89.83/s
+orders: 900  | Time: 9.46s | Rate: 95.17/s
+items: 900  | Time: 9.28s | Rate: 97.00/s
+products: 10  | Time: 8.98s | Rate: 1.11/s
+supplies: 65  | Time: 8.74s | Rate: 7.44/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 11.40s | Rate: 0.26/s
+customers: 935  | Time: 11.21s | Rate: 83.43/s
+orders: 1000  | Time: 10.64s | Rate: 93.94/s
+items: 1000  | Time: 10.47s | Rate: 95.55/s
+products: 10  | Time: 10.16s | Rate: 0.98/s
+supplies: 65  | Time: 9.92s | Rate: 6.55/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 13.15s | Rate: 0.23/s
+customers: 935  | Time: 12.96s | Rate: 72.17/s
+orders: 1300  | Time: 12.39s | Rate: 104.90/s
+items: 1200  | Time: 12.21s | Rate: 98.24/s
+products: 10  | Time: 11.91s | Rate: 0.84/s
+supplies: 65  | Time: 11.67s | Rate: 5.57/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 14.37s | Rate: 0.21/s
+customers: 935  | Time: 14.18s | Rate: 65.94/s
+orders: 1500  | Time: 13.62s | Rate: 110.15/s
+items: 1400  | Time: 13.44s | Rate: 104.17/s
+products: 10  | Time: 13.14s | Rate: 0.76/s
+supplies: 65  | Time: 12.90s | Rate: 5.04/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 15.55s | Rate: 0.19/s
+customers: 935  | Time: 15.36s | Rate: 60.89/s
+orders: 1600  | Time: 14.79s | Rate: 108.16/s
+items: 1600  | Time: 14.61s | Rate: 109.48/s
+products: 10  | Time: 14.31s | Rate: 0.70/s
+supplies: 65  | Time: 14.07s | Rate: 4.62/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 16.74s | Rate: 0.18/s
+customers: 935  | Time: 16.55s | Rate: 56.49/s
+orders: 1800  | Time: 15.99s | Rate: 112.58/s
+items: 1700  | Time: 15.81s | Rate: 107.53/s
+products: 10  | Time: 15.51s | Rate: 0.64/s
+supplies: 65  | Time: 15.27s | Rate: 4.26/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 17.96s | Rate: 0.17/s
+customers: 935  | Time: 17.77s | Rate: 52.62/s
+orders: 2000  | Time: 17.21s | Rate: 116.23/s
+items: 1900  | Time: 17.03s | Rate: 111.58/s
+products: 10  | Time: 16.73s | Rate: 0.60/s
+supplies: 65  | Time: 16.49s | Rate: 3.94/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 19.09s | Rate: 0.16/s
+customers: 935  | Time: 18.90s | Rate: 49.48/s
+orders: 2100  | Time: 18.33s | Rate: 114.55/s
+items: 2100  | Time: 18.15s | Rate: 115.67/s
+products: 10  | Time: 17.85s | Rate: 0.56/s
+supplies: 65  | Time: 17.61s | Rate: 3.69/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 20.21s | Rate: 0.15/s
+customers: 935  | Time: 20.02s | Rate: 46.71/s
+orders: 2300  | Time: 19.46s | Rate: 118.21/s
+items: 2200  | Time: 19.28s | Rate: 114.12/s
+products: 10  | Time: 18.98s | Rate: 0.53/s
+supplies: 65  | Time: 18.73s | Rate: 3.47/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 21.75s | Rate: 0.14/s
+customers: 935  | Time: 21.56s | Rate: 43.37/s
+orders: 2500  | Time: 20.99s | Rate: 119.08/s
+items: 2400  | Time: 20.82s | Rate: 115.30/s
+products: 10  | Time: 20.51s | Rate: 0.49/s
+supplies: 65  | Time: 20.27s | Rate: 3.21/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 22.77s | Rate: 0.13/s
+customers: 935  | Time: 22.58s | Rate: 41.42/s
+orders: 2600  | Time: 22.01s | Rate: 118.11/s
+items: 2600  | Time: 21.84s | Rate: 119.07/s
+products: 10  | Time: 21.53s | Rate: 0.46/s
+supplies: 65  | Time: 21.29s | Rate: 3.05/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 23.88s | Rate: 0.13/s
+customers: 935  | Time: 23.69s | Rate: 39.47/s
+orders: 2800  | Time: 23.13s | Rate: 121.06/s
+items: 2700  | Time: 22.95s | Rate: 117.65/s
+products: 10  | Time: 22.65s | Rate: 0.44/s
+supplies: 65  | Time: 22.41s | Rate: 2.90/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 25.12s | Rate: 0.12/s
+customers: 935  | Time: 24.93s | Rate: 37.50/s
+orders: 2900  | Time: 24.37s | Rate: 119.00/s
+items: 2900  | Time: 24.19s | Rate: 119.88/s
+products: 10  | Time: 23.89s | Rate: 0.42/s
+supplies: 65  | Time: 23.65s | Rate: 2.75/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 26.24s | Rate: 0.11/s
+customers: 935  | Time: 26.05s | Rate: 35.90/s
+orders: 3100  | Time: 25.48s | Rate: 121.64/s
+items: 3000  | Time: 25.31s | Rate: 118.55/s
+products: 10  | Time: 25.00s | Rate: 0.40/s
+supplies: 65  | Time: 24.76s | Rate: 2.62/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 27.25s | Rate: 0.11/s
+customers: 935  | Time: 27.05s | Rate: 34.56/s
+orders: 3300  | Time: 26.49s | Rate: 124.56/s
+items: 3200  | Time: 26.31s | Rate: 121.61/s
+products: 10  | Time: 26.01s | Rate: 0.38/s
+supplies: 65  | Time: 25.77s | Rate: 2.52/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 28.37s | Rate: 0.11/s
+customers: 935  | Time: 28.17s | Rate: 33.19/s
+orders: 3500  | Time: 27.61s | Rate: 126.76/s
+items: 3400  | Time: 27.43s | Rate: 123.94/s
+products: 10  | Time: 27.13s | Rate: 0.37/s
+supplies: 65  | Time: 26.89s | Rate: 2.42/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 29.42s | Rate: 0.10/s
+customers: 935  | Time: 29.23s | Rate: 31.99/s
+orders: 3700  | Time: 28.67s | Rate: 129.06/s
+items: 3600  | Time: 28.49s | Rate: 126.36/s
+products: 10  | Time: 28.19s | Rate: 0.35/s
+supplies: 65  | Time: 27.95s | Rate: 2.33/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 30.64s | Rate: 0.10/s
+customers: 935  | Time: 30.45s | Rate: 30.71/s
+orders: 3900  | Time: 29.89s | Rate: 130.49/s
+items: 3800  | Time: 29.71s | Rate: 127.90/s
+products: 10  | Time: 29.41s | Rate: 0.34/s
+supplies: 65  | Time: 29.17s | Rate: 2.23/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 31.78s | Rate: 0.09/s
+customers: 935  | Time: 31.59s | Rate: 29.60/s
+orders: 4100  | Time: 31.02s | Rate: 132.16/s
+items: 4100  | Time: 30.85s | Rate: 132.92/s
+products: 10  | Time: 30.54s | Rate: 0.33/s
+supplies: 65  | Time: 30.30s | Rate: 2.15/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 33.06s | Rate: 0.09/s
+customers: 935  | Time: 32.87s | Rate: 28.45/s
+orders: 4400  | Time: 32.30s | Rate: 136.21/s
+items: 4300  | Time: 32.13s | Rate: 133.85/s
+products: 10  | Time: 31.82s | Rate: 0.31/s
+supplies: 65  | Time: 31.58s | Rate: 2.06/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 34.14s | Rate: 0.09/s
+customers: 935  | Time: 33.95s | Rate: 27.54/s
+orders: 4600  | Time: 33.39s | Rate: 137.78/s
+items: 4500  | Time: 33.21s | Rate: 135.51/s
+products: 10  | Time: 32.91s | Rate: 0.30/s
+supplies: 65  | Time: 32.67s | Rate: 1.99/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 35.56s | Rate: 0.08/s
+customers: 935  | Time: 35.36s | Rate: 26.44/s
+orders: 4900  | Time: 34.80s | Rate: 140.80/s
+items: 4800  | Time: 34.62s | Rate: 138.64/s
+products: 10  | Time: 34.32s | Rate: 0.29/s
+supplies: 65  | Time: 34.08s | Rate: 1.91/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 36.70s | Rate: 0.08/s
+customers: 935  | Time: 36.51s | Rate: 25.61/s
+orders: 5100  | Time: 35.95s | Rate: 141.88/s
+items: 5000  | Time: 35.77s | Rate: 139.79/s
+products: 10  | Time: 35.46s | Rate: 0.28/s
+supplies: 65  | Time: 35.22s | Rate: 1.85/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 37.83s | Rate: 0.08/s
+customers: 935  | Time: 37.63s | Rate: 24.84/s
+orders: 5300  | Time: 37.07s | Rate: 142.97/s
+items: 5200  | Time: 36.89s | Rate: 140.95/s
+products: 10  | Time: 36.59s | Rate: 0.27/s
+supplies: 65  | Time: 36.35s | Rate: 1.79/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 38.95s | Rate: 0.08/s
+customers: 935  | Time: 38.76s | Rate: 24.12/s
+orders: 5500  | Time: 38.20s | Rate: 143.98/s
+items: 5400  | Time: 38.02s | Rate: 142.03/s
+products: 10  | Time: 37.72s | Rate: 0.27/s
+supplies: 65  | Time: 37.48s | Rate: 1.73/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 40.18s | Rate: 0.07/s
+customers: 935  | Time: 39.99s | Rate: 23.38/s
+orders: 5700  | Time: 39.43s | Rate: 144.57/s
+items: 5600  | Time: 39.25s | Rate: 142.68/s
+products: 10  | Time: 38.95s | Rate: 0.26/s
+supplies: 65  | Time: 38.70s | Rate: 1.68/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 41.28s | Rate: 0.07/s
+customers: 935  | Time: 41.08s | Rate: 22.76/s
+orders: 5900  | Time: 40.52s | Rate: 145.61/s
+items: 5800  | Time: 40.34s | Rate: 143.77/s
+products: 10  | Time: 40.04s | Rate: 0.25/s
+supplies: 65  | Time: 39.80s | Rate: 1.63/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 42.31s | Rate: 0.07/s
+customers: 935  | Time: 42.12s | Rate: 22.20/s
+orders: 6100  | Time: 41.56s | Rate: 146.78/s
+items: 6100  | Time: 41.38s | Rate: 147.41/s
+products: 10  | Time: 41.08s | Rate: 0.24/s
+supplies: 65  | Time: 40.84s | Rate: 1.59/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 43.33s | Rate: 0.07/s
+customers: 935  | Time: 43.14s | Rate: 21.67/s
+orders: 6300  | Time: 42.58s | Rate: 147.97/s
+items: 6300  | Time: 42.40s | Rate: 148.59/s
+products: 10  | Time: 42.10s | Rate: 0.24/s
+supplies: 65  | Time: 41.85s | Rate: 1.55/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 44.35s | Rate: 0.07/s
+customers: 935  | Time: 44.16s | Rate: 21.17/s
+orders: 6500  | Time: 43.60s | Rate: 149.09/s
+items: 6500  | Time: 43.42s | Rate: 149.70/s
+products: 10  | Time: 43.12s | Rate: 0.23/s
+supplies: 65  | Time: 42.88s | Rate: 1.52/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 45.37s | Rate: 0.07/s
+customers: 935  | Time: 45.18s | Rate: 20.69/s
+orders: 6700  | Time: 44.62s | Rate: 150.16/s
+items: 6700  | Time: 44.44s | Rate: 150.76/s
+products: 10  | Time: 44.14s | Rate: 0.23/s
+supplies: 65  | Time: 43.90s | Rate: 1.48/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 46.37s | Rate: 0.06/s
+customers: 935  | Time: 46.18s | Rate: 20.25/s
+orders: 6900  | Time: 45.62s | Rate: 151.25/s
+items: 6800  | Time: 45.44s | Rate: 149.64/s
+products: 10  | Time: 45.14s | Rate: 0.22/s
+supplies: 65  | Time: 44.90s | Rate: 1.45/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 47.55s | Rate: 0.06/s
+customers: 935  | Time: 47.35s | Rate: 19.75/s
+orders: 7100  | Time: 46.79s | Rate: 151.74/s
+items: 7100  | Time: 46.61s | Rate: 152.32/s
+products: 10  | Time: 46.31s | Rate: 0.22/s
+supplies: 65  | Time: 46.07s | Rate: 1.41/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 48.88s | Rate: 0.06/s
+customers: 935  | Time: 48.69s | Rate: 19.20/s
+orders: 7400  | Time: 48.13s | Rate: 153.75/s
+items: 7300  | Time: 47.95s | Rate: 152.24/s
+products: 10  | Time: 47.65s | Rate: 0.21/s
+supplies: 65  | Time: 47.41s | Rate: 1.37/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 50.22s | Rate: 0.06/s
+customers: 935  | Time: 50.02s | Rate: 18.69/s
+orders: 7700  | Time: 49.46s | Rate: 155.68/s
+items: 7600  | Time: 49.28s | Rate: 154.21/s
+products: 10  | Time: 48.98s | Rate: 0.20/s
+supplies: 65  | Time: 48.74s | Rate: 1.33/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 51.54s | Rate: 0.06/s
+customers: 935  | Time: 51.35s | Rate: 18.21/s
+orders: 7900  | Time: 50.79s | Rate: 155.54/s
+items: 7800  | Time: 50.61s | Rate: 154.12/s
+products: 10  | Time: 50.31s | Rate: 0.20/s
+supplies: 65  | Time: 50.07s | Rate: 1.30/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 52.64s | Rate: 0.06/s
+customers: 935  | Time: 52.45s | Rate: 17.83/s
+orders: 8100  | Time: 51.89s | Rate: 156.11/s
+items: 8100  | Time: 51.71s | Rate: 156.65/s
+products: 10  | Time: 51.41s | Rate: 0.19/s
+supplies: 65  | Time: 51.16s | Rate: 1.27/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 53.90s | Rate: 0.06/s
+customers: 935  | Time: 53.71s | Rate: 17.41/s
+orders: 8300  | Time: 53.15s | Rate: 156.16/s
+items: 8300  | Time: 52.97s | Rate: 156.69/s
+products: 10  | Time: 52.67s | Rate: 0.19/s
+supplies: 65  | Time: 52.43s | Rate: 1.24/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 55.34s | Rate: 0.05/s
+customers: 935  | Time: 55.15s | Rate: 16.95/s
+orders: 8600  | Time: 54.59s | Rate: 157.55/s
+items: 8500  | Time: 54.41s | Rate: 156.23/s
+products: 10  | Time: 54.10s | Rate: 0.18/s
+supplies: 65  | Time: 53.86s | Rate: 1.21/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 56.40s | Rate: 0.05/s
+customers: 935  | Time: 56.21s | Rate: 16.64/s
+orders: 8800  | Time: 55.64s | Rate: 158.15/s
+items: 8800  | Time: 55.47s | Rate: 158.66/s
+products: 10  | Time: 55.16s | Rate: 0.18/s
+supplies: 65  | Time: 54.92s | Rate: 1.18/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 57.44s | Rate: 0.05/s
+customers: 935  | Time: 57.25s | Rate: 16.33/s
+orders: 9000  | Time: 56.68s | Rate: 158.78/s
+items: 9000  | Time: 56.50s | Rate: 159.28/s
+products: 10  | Time: 56.20s | Rate: 0.18/s
+supplies: 65  | Time: 55.96s | Rate: 1.16/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 58.48s | Rate: 0.05/s
+customers: 935  | Time: 58.29s | Rate: 16.04/s
+orders: 9200  | Time: 57.73s | Rate: 159.38/s
+items: 9200  | Time: 57.55s | Rate: 159.87/s
+products: 10  | Time: 57.24s | Rate: 0.17/s
+supplies: 65  | Time: 57.00s | Rate: 1.14/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 59.65s | Rate: 0.05/s
+customers: 935  | Time: 59.45s | Rate: 15.73/s
+orders: 9400  | Time: 58.89s | Rate: 159.61/s
+items: 9300  | Time: 58.71s | Rate: 158.39/s
+products: 10  | Time: 58.41s | Rate: 0.17/s
+supplies: 65  | Time: 58.17s | Rate: 1.12/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 60.66s | Rate: 0.05/s
+customers: 935  | Time: 60.47s | Rate: 15.46/s
+orders: 9600  | Time: 59.91s | Rate: 160.25/s
+items: 9500  | Time: 59.73s | Rate: 159.05/s
+products: 10  | Time: 59.43s | Rate: 0.17/s
+supplies: 65  | Time: 59.19s | Rate: 1.10/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 61.79s | Rate: 0.05/s
+customers: 935  | Time: 61.60s | Rate: 15.18/s
+orders: 9800  | Time: 61.04s | Rate: 160.56/s
+items: 9700  | Time: 60.86s | Rate: 159.39/s
+products: 10  | Time: 60.55s | Rate: 0.17/s
+supplies: 65  | Time: 60.31s | Rate: 1.08/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 3/5 (60.0%) | Time: 63.10s | Rate: 0.05/s
+customers: 935  | Time: 62.91s | Rate: 14.86/s
+orders: 10000  | Time: 62.35s | Rate: 160.40/s
+items: 9900  | Time: 62.17s | Rate: 159.25/s
+products: 10  | Time: 61.87s | Rate: 0.16/s
+supplies: 65  | Time: 61.62s | Rate: 1.05/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 5/5 (100.0%) | Time: 63.39s | Rate: 0.08/s
+customers: 935  | Time: 63.20s | Rate: 14.79/s
+orders: 10000  | Time: 62.64s | Rate: 159.64/s
+items: 10000  | Time: 62.46s | Rate: 160.10/s
+products: 10  | Time: 62.16s | Rate: 0.16/s
+supplies: 65  | Time: 61.92s | Rate: 1.05/s
+
+------------------- Normalize rest_api in 1750847044.9943419 -------------------
+Files: 0/5 (0.0%) | Time: 0.00s | Rate: 0.00/s
+
+------------------- Normalize rest_api in 1750847044.9943419 -------------------
+Files: 0/5 (0.0%) | Time: 0.00s | Rate: 0.00/s
+Items: 0  | Time: 0.00s | Rate: 0.00/s
+
+------------------- Normalize rest_api in 1750847044.9943419 -------------------
+Files: 6/5 (120.0%) | Time: 0.79s | Rate: 7.64/s
+Items: 36280  | Time: 0.79s | Rate: 46201.67/s
+
+--------------------- Load rest_api in 1750847044.9943419 ----------------------
+Jobs: 0/6 (0.0%) | Time: 0.00s | Rate: 0.00/s
+
+--------------------- Load rest_api in 1750847044.9943419 ----------------------
+Jobs: 0/6 (0.0%) | Time: 7.12s | Rate: 0.00/s
+
+--------------------- Load rest_api in 1750847044.9943419 ----------------------
+Jobs: 5/6 (83.3%) | Time: 8.23s | Rate: 0.61/s
+
+--------------------- Load rest_api in 1750847044.9943419 ----------------------
+Jobs: 6/6 (100.0%) | Time: 10.16s | Rate: 0.59/s
+
+Pipeline jaffle_shop_bigquery load step completed in 10.16 seconds
+1 load package(s) were loaded to destination bigquery and into dataset jaffle_shop_data
+The bigquery destination used workshop-demo@dlthub-sandbox.iam.gserviceaccount.com@dlthub-sandbox location to store data
+Load package 1750847044.9943419 is LOADED and contains no failed jobs

@@ -1,0 +1,10 @@
+[32m2025-06-25 12:31:03 +0200[0m - dagster - [34mDEBUG[0m - parallel_extraction_job - 4a8a00c5-a4e8-42fa-be50-068e755defd8 - 92627 - LOGS_CAPTURED - Started capturing logs in process (pid: 92627).
+[32m2025-06-25 12:31:03 +0200[0m - dagster - [34mDEBUG[0m - parallel_extraction_job - 4a8a00c5-a4e8-42fa-be50-068e755defd8 - 92627 - products_parallel - STEP_START - Started execution of step "products_parallel".
+/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/google/cloud/bigquery/client.py:610: UserWarning: Cannot create BigQuery Storage client, the dependency google-cloud-bigquery-storage is not installed.
+  warnings.warn(
+2025-06-25 12:31:04,301|[WARNING]|92627|8517099264|dlt|client.py|detect_paginator:312|Fallback paginator used: SinglePagePaginator at 129f1cbd0. Please provide right paginator manually.
+[32m2025-06-25 12:31:12 +0200[0m - dagster - [34mDEBUG[0m - parallel_extraction_job - 4a8a00c5-a4e8-42fa-be50-068e755defd8 - 92627 - products_parallel - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[32m2025-06-25 12:31:12 +0200[0m - dagster - [34mDEBUG[0m - parallel_extraction_job - 4a8a00c5-a4e8-42fa-be50-068e755defd8 - products_parallel - Writing file at: /Users/dlthubgtm/Desktop/Aashish/dlthub-education/workshops/demo_dagster/parallel-pipeline/.tmp_dagster_home_7ahjwgrc/storage/products_parallel using PickledObjectFilesystemIOManager...
+[32m2025-06-25 12:31:12 +0200[0m - dagster - [34mDEBUG[0m - parallel_extraction_job - 4a8a00c5-a4e8-42fa-be50-068e755defd8 - 92627 - products_parallel - ASSET_MATERIALIZATION - Materialized value products_parallel.
+[32m2025-06-25 12:31:12 +0200[0m - dagster - [34mDEBUG[0m - parallel_extraction_job - 4a8a00c5-a4e8-42fa-be50-068e755defd8 - 92627 - products_parallel - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2025-06-25 12:31:12 +0200[0m - dagster - [34mDEBUG[0m - parallel_extraction_job - 4a8a00c5-a4e8-42fa-be50-068e755defd8 - 92627 - products_parallel - STEP_SUCCESS - Finished execution of step "products_parallel" in 9.5s.

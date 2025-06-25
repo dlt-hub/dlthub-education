@@ -1,0 +1,176 @@
+psutil dependency is not installed and mem stats will not be available. add psutil to your environment or pass dump_system_stats argument as False to disable warning.
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 0.00s | Rate: 0.00/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 1.21s | Rate: 0.00/s
+orders: 100  | Time: 0.00s | Rate: 32263876.92/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 2.50s | Rate: 0.00/s
+orders: 400  | Time: 1.29s | Rate: 310.21/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 11.99s | Rate: 0.00/s
+orders: 500  | Time: 10.78s | Rate: 46.37/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 13.39s | Rate: 0.00/s
+orders: 900  | Time: 12.18s | Rate: 73.90/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 22.87s | Rate: 0.00/s
+orders: 1000  | Time: 21.67s | Rate: 46.15/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 24.10s | Rate: 0.00/s
+orders: 1300  | Time: 22.90s | Rate: 56.78/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 28.43s | Rate: 0.00/s
+orders: 1500  | Time: 27.22s | Rate: 55.10/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 29.50s | Rate: 0.00/s
+orders: 1800  | Time: 28.29s | Rate: 63.63/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 30.55s | Rate: 0.00/s
+orders: 2100  | Time: 29.34s | Rate: 71.58/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 31.88s | Rate: 0.00/s
+orders: 2400  | Time: 30.68s | Rate: 78.24/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 33.21s | Rate: 0.00/s
+orders: 2700  | Time: 32.00s | Rate: 84.36/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 34.36s | Rate: 0.00/s
+orders: 3000  | Time: 33.15s | Rate: 90.50/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 35.56s | Rate: 0.00/s
+orders: 3300  | Time: 34.35s | Rate: 96.07/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 36.86s | Rate: 0.00/s
+orders: 3600  | Time: 35.65s | Rate: 100.97/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 37.91s | Rate: 0.00/s
+orders: 3900  | Time: 36.70s | Rate: 106.25/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 39.04s | Rate: 0.00/s
+orders: 4200  | Time: 37.83s | Rate: 111.02/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 40.49s | Rate: 0.00/s
+orders: 4600  | Time: 39.28s | Rate: 117.10/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 41.89s | Rate: 0.00/s
+orders: 4900  | Time: 40.68s | Rate: 120.46/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 43.18s | Rate: 0.00/s
+orders: 5200  | Time: 41.97s | Rate: 123.90/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 44.60s | Rate: 0.00/s
+orders: 5500  | Time: 43.39s | Rate: 126.76/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 45.87s | Rate: 0.00/s
+orders: 5800  | Time: 44.66s | Rate: 129.86/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 47.91s | Rate: 0.00/s
+orders: 6100  | Time: 46.70s | Rate: 130.63/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 49.19s | Rate: 0.00/s
+orders: 6400  | Time: 47.99s | Rate: 133.37/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 50.38s | Rate: 0.00/s
+orders: 6600  | Time: 49.17s | Rate: 134.23/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 51.41s | Rate: 0.00/s
+orders: 6800  | Time: 50.21s | Rate: 135.44/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 52.50s | Rate: 0.00/s
+orders: 7000  | Time: 51.29s | Rate: 136.47/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 53.73s | Rate: 0.00/s
+orders: 7300  | Time: 52.52s | Rate: 138.99/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 54.93s | Rate: 0.00/s
+orders: 7500  | Time: 53.72s | Rate: 139.62/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 56.49s | Rate: 0.00/s
+orders: 7800  | Time: 55.29s | Rate: 141.09/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 57.51s | Rate: 0.00/s
+orders: 8000  | Time: 56.30s | Rate: 142.10/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 58.59s | Rate: 0.00/s
+orders: 8200  | Time: 57.38s | Rate: 142.91/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 59.74s | Rate: 0.00/s
+orders: 8400  | Time: 58.53s | Rate: 143.51/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 60.77s | Rate: 0.00/s
+orders: 8600  | Time: 59.56s | Rate: 144.39/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 62.11s | Rate: 0.00/s
+orders: 8900  | Time: 60.90s | Rate: 146.14/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 63.30s | Rate: 0.00/s
+orders: 9200  | Time: 62.09s | Rate: 148.16/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 64.65s | Rate: 0.00/s
+orders: 9500  | Time: 63.45s | Rate: 149.73/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 0/1 (0.0%) | Time: 66.08s | Rate: 0.00/s
+orders: 9800  | Time: 64.88s | Rate: 151.06/s
+
+--------------------------- Extract orders_parallel ----------------------------
+Resources: 1/1 (100.0%) | Time: 66.95s | Rate: 0.01/s
+orders: 10000  | Time: 65.74s | Rate: 152.11/s
+
+---------------- Normalize orders_parallel in 1750847004.034614 ----------------
+Files: 0/1 (0.0%) | Time: 0.00s | Rate: 0.00/s
+
+---------------- Normalize orders_parallel in 1750847004.034614 ----------------
+Files: 0/1 (0.0%) | Time: 0.00s | Rate: 0.00/s
+Items: 0  | Time: 0.00s | Rate: 0.00/s
+
+---------------- Normalize orders_parallel in 1750847004.034614 ----------------
+Files: 2/1 (200.0%) | Time: 0.57s | Rate: 3.51/s
+Items: 25270  | Time: 0.57s | Rate: 44380.29/s
+
+------------------ Load orders_parallel in 1750847004.034614 -------------------
+Jobs: 0/2 (0.0%) | Time: 0.00s | Rate: 0.00/s
+
+------------------ Load orders_parallel in 1750847004.034614 -------------------
+Jobs: 0/2 (0.0%) | Time: 6.54s | Rate: 0.00/s
+
+------------------ Load orders_parallel in 1750847004.034614 -------------------
+Jobs: 2/2 (100.0%) | Time: 8.34s | Rate: 0.24/s
+

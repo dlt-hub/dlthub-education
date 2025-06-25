@@ -1,0 +1,32 @@
+psutil dependency is not installed and mem stats will not be available. add psutil to your environment or pass dump_system_stats argument as False to disable warning.
+-------------------------- Extract products_parallel ---------------------------
+Resources: 0/1 (0.0%) | Time: 0.00s | Rate: 0.00/s
+
+-------------------------- Extract products_parallel ---------------------------
+Resources: 0/1 (0.0%) | Time: 0.13s | Rate: 0.00/s
+products: 10  | Time: 0.00s | Rate: 3226387.69/s
+
+-------------------------- Extract products_parallel ---------------------------
+Resources: 1/1 (100.0%) | Time: 0.14s | Rate: 7.23/s
+products: 10  | Time: 0.01s | Rate: 759.82/s
+
+-------------- Normalize products_parallel in 1750847464.1752388 ---------------
+Files: 0/1 (0.0%) | Time: 0.00s | Rate: 0.00/s
+
+-------------- Normalize products_parallel in 1750847464.1752388 ---------------
+Files: 0/1 (0.0%) | Time: 0.00s | Rate: 0.00/s
+Items: 0  | Time: 0.00s | Rate: 0.00/s
+
+-------------- Normalize products_parallel in 1750847464.1752388 ---------------
+Files: 1/1 (100.0%) | Time: 0.00s | Rate: 206.73/s
+Items: 10  | Time: 0.00s | Rate: 2084.23/s
+
+----------------- Load products_parallel in 1750847464.1752388 -----------------
+Jobs: 0/1 (0.0%) | Time: 0.00s | Rate: 0.00/s
+
+----------------- Load products_parallel in 1750847464.1752388 -----------------
+Jobs: 0/1 (0.0%) | Time: 6.26s | Rate: 0.00/s
+
+----------------- Load products_parallel in 1750847464.1752388 -----------------
+Jobs: 1/1 (100.0%) | Time: 8.26s | Rate: 0.12/s
+
