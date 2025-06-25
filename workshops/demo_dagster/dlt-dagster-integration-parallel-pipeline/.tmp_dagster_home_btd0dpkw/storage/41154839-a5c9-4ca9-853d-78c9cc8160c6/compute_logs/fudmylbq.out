@@ -1,0 +1,166 @@
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 0.00s | Rate: 0.00/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 0.41s | Rate: 0.00/s
+orders: 100  | Time: 0.00s | Rate: 32263876.92/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 1.84s | Rate: 0.00/s
+orders: 400  | Time: 1.42s | Rate: 281.49/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 2.85s | Rate: 0.00/s
+orders: 700  | Time: 2.44s | Rate: 287.44/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 3.99s | Rate: 0.00/s
+orders: 1000  | Time: 3.57s | Rate: 279.97/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 5.21s | Rate: 0.00/s
+orders: 1300  | Time: 4.80s | Rate: 271.08/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 6.24s | Rate: 0.00/s
+orders: 1600  | Time: 5.83s | Rate: 274.53/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 7.41s | Rate: 0.00/s
+orders: 1900  | Time: 7.00s | Rate: 271.46/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 8.52s | Rate: 0.00/s
+orders: 2200  | Time: 8.11s | Rate: 271.33/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 9.58s | Rate: 0.00/s
+orders: 2500  | Time: 9.17s | Rate: 272.70/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 10.71s | Rate: 0.00/s
+orders: 2800  | Time: 10.30s | Rate: 271.90/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 11.77s | Rate: 0.00/s
+orders: 3100  | Time: 11.35s | Rate: 273.05/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 12.96s | Rate: 0.00/s
+orders: 3400  | Time: 12.55s | Rate: 270.94/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 13.97s | Rate: 0.00/s
+orders: 3700  | Time: 13.55s | Rate: 272.98/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 15.15s | Rate: 0.00/s
+orders: 4000  | Time: 14.73s | Rate: 271.50/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 16.79s | Rate: 0.00/s
+orders: 4400  | Time: 16.37s | Rate: 268.75/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 18.02s | Rate: 0.00/s
+orders: 4700  | Time: 17.61s | Rate: 266.95/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 19.09s | Rate: 0.00/s
+orders: 5000  | Time: 18.67s | Rate: 267.75/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 20.26s | Rate: 0.00/s
+orders: 5300  | Time: 19.85s | Rate: 267.03/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 21.44s | Rate: 0.00/s
+orders: 5600  | Time: 21.02s | Rate: 266.37/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 22.73s | Rate: 0.00/s
+orders: 5900  | Time: 22.31s | Rate: 264.42/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 23.75s | Rate: 0.00/s
+orders: 6200  | Time: 23.34s | Rate: 265.64/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 24.82s | Rate: 0.00/s
+orders: 6500  | Time: 24.40s | Rate: 266.37/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 25.93s | Rate: 0.00/s
+orders: 6800  | Time: 25.52s | Rate: 266.49/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 27.44s | Rate: 0.00/s
+orders: 7200  | Time: 27.02s | Rate: 266.42/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 28.52s | Rate: 0.00/s
+orders: 7500  | Time: 28.10s | Rate: 266.88/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 29.76s | Rate: 0.00/s
+orders: 7800  | Time: 29.34s | Rate: 265.83/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 30.94s | Rate: 0.00/s
+orders: 8100  | Time: 30.52s | Rate: 265.36/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 32.04s | Rate: 0.00/s
+orders: 8400  | Time: 31.62s | Rate: 265.62/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 33.19s | Rate: 0.00/s
+orders: 8700  | Time: 32.77s | Rate: 265.47/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 34.59s | Rate: 0.00/s
+orders: 9100  | Time: 34.18s | Rate: 266.25/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 35.94s | Rate: 0.00/s
+orders: 9400  | Time: 35.52s | Rate: 264.61/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 37.36s | Rate: 0.00/s
+orders: 9800  | Time: 36.94s | Rate: 265.29/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 1/1 (100.0%) | Time: 38.29s | Rate: 0.03/s
+orders: 10000  | Time: 37.87s | Rate: 264.05/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 0.00s | Rate: 0.00/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 0/1 (0.0%) | Time: 0.00s | Rate: 0.00/s
+_dlt_pipeline_state: 1  | Time: 0.00s | Rate: 524288.00/s
+
+------------------------------- Extract rest_api -------------------------------
+Resources: 1/1 (100.0%) | Time: 0.01s | Rate: 67.34/s
+_dlt_pipeline_state: 1  | Time: 0.01s | Rate: 73.24/s
+
+------------------- Normalize rest_api in 1750863308.1136699 -------------------
+Files: 0/2 (0.0%) | Time: 0.00s | Rate: 0.00/s
+
+------------------- Normalize rest_api in 1750863308.1136699 -------------------
+Files: 0/2 (0.0%) | Time: 0.00s | Rate: 0.00/s
+Items: 0  | Time: 0.00s | Rate: 0.00/s
+
+------------------- Normalize rest_api in 1750863308.1136699 -------------------
+Files: 3/2 (150.0%) | Time: 0.60s | Rate: 5.02/s
+Items: 25271  | Time: 0.60s | Rate: 42323.74/s
+
+--------------------- Load rest_api in 1750863308.1136699 ----------------------
+Jobs: 0/3 (0.0%) | Time: 0.00s | Rate: 0.00/s
+
+--------------------- Load rest_api in 1750863308.1136699 ----------------------
+Jobs: 0/3 (0.0%) | Time: 10.08s | Rate: 0.00/s
+
+--------------------- Load rest_api in 1750863308.1136699 ----------------------
+Jobs: 3/3 (100.0%) | Time: 12.46s | Rate: 0.24/s
+

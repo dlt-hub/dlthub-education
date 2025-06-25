@@ -20,7 +20,7 @@ def jaffle_shop_source():
 jaffle_shop_pipeline = dlt.pipeline(
     pipeline_name="jaffle_shop_bigquery",
     destination="bigquery",
-    dataset_name="jaffle_shop_data",
+    dataset_name="jaffle_shop_data_integration_sequential",
     progress="log"
 )
 
