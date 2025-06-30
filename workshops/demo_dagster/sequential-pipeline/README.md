@@ -1,16 +1,20 @@
 # sequential_pipeline
 
-This is a [Dagster](https://dagster.io/) project scaffolded with [`dagster project scaffold`](https://docs.dagster.io/guides/build/projects/creating-a-new-project).
+## Project Goal
+Run a DLT pipeline in Dagster using native DLT code, without the Dagster-DLT integration, in sequential mode. This project demonstrates how to orchestrate a DLT pipeline from Dagster using native DLT assets.
 
-## Getting started
+- **Processing Mode:** Sequential
+- **Integration:** Native DLT (no `dagster_dlt`)
 
-First, install your Dagster code location as a Python package. By using the --editable flag, pip will install your Python package in ["editable mode"](https://pip.pypa.io/en/latest/topics/local-project-installs/#editable-installs) so that as you develop, local code changes will automatically apply.
+## Getting Started
+
+Install your Dagster code location as a Python package (in editable mode):
 
 ```bash
 pip install -e ".[dev]"
 ```
 
-Then, start the Dagster UI web server:
+Start the Dagster UI web server:
 
 ```bash
 dagster dev
@@ -18,30 +22,47 @@ dagster dev
 
 Open http://localhost:3000 with your browser to see the project.
 
-You can start writing assets in `sequential_pipeline/assets.py`. The assets are automatically loaded into the Dagster code location as you define them.
+## Installation for Building the Dagster Graph
+
+The following commands were used to build the Dagster graph/codebase. You can use either `pip` or [`uv`](https://github.com/astral-sh/uv) for faster installs:
+
+```bash
+# With pip
+pip install dagster dagster-embedded-elt
+pip install "dlt[bigquery]"
+
+# Or with uv (recommended for speed)
+uv pip install dagster dagster-embedded-elt
+uv pip install "dlt[bigquery]"
+```
+
+To scaffold a new Dagster project (if starting from scratch):
+
+```bash
+dagster project scaffold --name <your-project-name>
+```
+
+> **Note:** These commands are for building the codebase and setting up the project structure. For running the project, see the instructions below.
+
+## Assets
+- Main assets are defined in `sequential_pipeline/assets.py`.
 
 ## Development
 
 ### Adding new Python dependencies
+Specify new Python dependencies in `setup.py`.
 
-You can specify new Python dependencies in `setup.py`.
-
-### Unit testing
-
-Tests are in the `sequential_pipeline_tests` directory and you can run tests using `pytest`:
+### Unit Testing
+Tests are in the `sequential_pipeline_tests` directory. Run tests using:
 
 ```bash
 pytest sequential_pipeline_tests
 ```
 
-### Schedules and sensors
-
+### Schedules and Sensors
 If you want to enable Dagster [Schedules](https://docs.dagster.io/guides/automate/schedules/) or [Sensors](https://docs.dagster.io/guides/automate/sensors/) for your jobs, the [Dagster Daemon](https://docs.dagster.io/guides/deploy/execution/dagster-daemon) process must be running. This is done automatically when you run `dagster dev`.
 
-Once your Dagster Daemon is running, you can start turning on schedules and sensors for your jobs.
-
 ## Deploy on Dagster+
-
 The easiest way to deploy your Dagster project is to use Dagster+.
 
 Check out the [Dagster+ documentation](https://docs.dagster.io/dagster-plus/) to learn more.

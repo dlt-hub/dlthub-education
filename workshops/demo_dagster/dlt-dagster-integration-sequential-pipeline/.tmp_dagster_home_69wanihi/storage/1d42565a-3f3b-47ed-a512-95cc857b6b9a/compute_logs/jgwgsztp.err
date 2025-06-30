@@ -1,0 +1,17 @@
+[32m2025-06-30 13:55:16 +0200[0m - dagster - [34mDEBUG[0m - jaffle_shop_dlt_job - 1d42565a-3f3b-47ed-a512-95cc857b6b9a - 8201 - LOGS_CAPTURED - Started capturing logs in process (pid: 8201).
+[32m2025-06-30 13:55:16 +0200[0m - dagster - [34mDEBUG[0m - jaffle_shop_dlt_job - 1d42565a-3f3b-47ed-a512-95cc857b6b9a - 8201 - jaffle_shop - STEP_START - Started execution of step "jaffle_shop".
+/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/google/cloud/bigquery/client.py:610: UserWarning: Cannot create BigQuery Storage client, the dependency google-cloud-bigquery-storage is not installed.
+  warnings.warn(
+2025-06-30 13:55:18,418|[WARNING]|8201|8517099264|dlt|client.py|detect_paginator:312|Fallback paginator used: SinglePagePaginator at 13cd40ad0. Please provide right paginator manually.
+2025-06-30 13:55:18,608|[WARNING]|8201|8517099264|dlt|client.py|detect_paginator:312|Fallback paginator used: SinglePagePaginator at 13cfdd590. Please provide right paginator manually.
+[32m2025-06-30 13:56:17 +0200[0m - dagster - [34mDEBUG[0m - jaffle_shop_dlt_job - 1d42565a-3f3b-47ed-a512-95cc857b6b9a - 8201 - jaffle_shop - STEP_OUTPUT - Yielded output "dlt_rest_api_customers" of type "Nothing". (Type check passed).
+[32m2025-06-30 13:56:17 +0200[0m - dagster - [34mDEBUG[0m - jaffle_shop_dlt_job - 1d42565a-3f3b-47ed-a512-95cc857b6b9a - 8201 - jaffle_shop - ASSET_MATERIALIZATION - Materialized value dlt_rest_api_customers.
+[32m2025-06-30 13:56:17 +0200[0m - dagster - [34mDEBUG[0m - jaffle_shop_dlt_job - 1d42565a-3f3b-47ed-a512-95cc857b6b9a - 8201 - jaffle_shop - STEP_OUTPUT - Yielded output "dlt_rest_api_orders" of type "Nothing". (Type check passed).
+[32m2025-06-30 13:56:17 +0200[0m - dagster - [34mDEBUG[0m - jaffle_shop_dlt_job - 1d42565a-3f3b-47ed-a512-95cc857b6b9a - 8201 - jaffle_shop - ASSET_MATERIALIZATION - Materialized value dlt_rest_api_orders.
+[32m2025-06-30 13:56:17 +0200[0m - dagster - [34mDEBUG[0m - jaffle_shop_dlt_job - 1d42565a-3f3b-47ed-a512-95cc857b6b9a - 8201 - jaffle_shop - STEP_OUTPUT - Yielded output "dlt_rest_api_items" of type "Nothing". (Type check passed).
+[32m2025-06-30 13:56:17 +0200[0m - dagster - [34mDEBUG[0m - jaffle_shop_dlt_job - 1d42565a-3f3b-47ed-a512-95cc857b6b9a - 8201 - jaffle_shop - ASSET_MATERIALIZATION - Materialized value dlt_rest_api_items.
+[32m2025-06-30 13:56:17 +0200[0m - dagster - [34mDEBUG[0m - jaffle_shop_dlt_job - 1d42565a-3f3b-47ed-a512-95cc857b6b9a - 8201 - jaffle_shop - STEP_OUTPUT - Yielded output "dlt_rest_api_products" of type "Nothing". (Type check passed).
+[32m2025-06-30 13:56:17 +0200[0m - dagster - [34mDEBUG[0m - jaffle_shop_dlt_job - 1d42565a-3f3b-47ed-a512-95cc857b6b9a - 8201 - jaffle_shop - ASSET_MATERIALIZATION - Materialized value dlt_rest_api_products.
+[32m2025-06-30 13:56:17 +0200[0m - dagster - [34mDEBUG[0m - jaffle_shop_dlt_job - 1d42565a-3f3b-47ed-a512-95cc857b6b9a - 8201 - jaffle_shop - STEP_OUTPUT - Yielded output "dlt_rest_api_supplies" of type "Nothing". (Type check passed).
+[32m2025-06-30 13:56:17 +0200[0m - dagster - [34mDEBUG[0m - jaffle_shop_dlt_job - 1d42565a-3f3b-47ed-a512-95cc857b6b9a - 8201 - jaffle_shop - ASSET_MATERIALIZATION - Materialized value dlt_rest_api_supplies.
+[32m2025-06-30 13:56:17 +0200[0m - dagster - [34mDEBUG[0m - jaffle_shop_dlt_job - 1d42565a-3f3b-47ed-a512-95cc857b6b9a - 8201 - jaffle_shop - STEP_SUCCESS - Finished execution of step "jaffle_shop" in 1m1s.

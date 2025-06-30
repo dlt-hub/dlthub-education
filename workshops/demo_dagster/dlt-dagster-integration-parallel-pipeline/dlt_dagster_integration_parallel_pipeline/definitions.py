@@ -5,7 +5,7 @@ from .assets import assets
 parallel_job = define_asset_job(
     name="jaffle_shop_parallel_job",
     selection=assets,
-    executor_def=multiprocess_executor.configured({"max_concurrent": 3})
+    executor_def=multiprocess_executor.configured({"max_concurrent": 5})
 )
 
 parallel_schedule = ScheduleDefinition(

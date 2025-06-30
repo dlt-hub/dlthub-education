@@ -1,0 +1,32 @@
+psutil dependency is not installed and mem stats will not be available. add psutil to your environment or pass dump_system_stats argument as False to disable warning.
+-------------------------- Extract supplies_parallel ---------------------------
+Resources: 0/1 (0.0%) | Time: 0.00s | Rate: 0.00/s
+
+-------------------------- Extract supplies_parallel ---------------------------
+Resources: 0/1 (0.0%) | Time: 0.27s | Rate: 0.00/s
+supplies: 65  | Time: 0.00s | Rate: 16037044.71/s
+
+-------------------------- Extract supplies_parallel ---------------------------
+Resources: 1/1 (100.0%) | Time: 0.28s | Rate: 3.55/s
+supplies: 65  | Time: 0.01s | Rate: 4930.91/s
+
+--------------- Normalize supplies_parallel in 1751284687.120835 ---------------
+Files: 0/1 (0.0%) | Time: 0.00s | Rate: 0.00/s
+
+--------------- Normalize supplies_parallel in 1751284687.120835 ---------------
+Files: 0/1 (0.0%) | Time: 0.00s | Rate: 0.00/s
+Items: 0  | Time: 0.00s | Rate: 0.00/s
+
+--------------- Normalize supplies_parallel in 1751284687.120835 ---------------
+Files: 1/1 (100.0%) | Time: 0.01s | Rate: 194.74/s
+Items: 65  | Time: 0.01s | Rate: 12752.82/s
+
+----------------- Load supplies_parallel in 1751284687.120835 ------------------
+Jobs: 0/1 (0.0%) | Time: 0.00s | Rate: 0.00/s
+
+----------------- Load supplies_parallel in 1751284687.120835 ------------------
+Jobs: 0/1 (0.0%) | Time: 8.73s | Rate: 0.00/s
+
+----------------- Load supplies_parallel in 1751284687.120835 ------------------
+Jobs: 1/1 (100.0%) | Time: 10.97s | Rate: 0.09/s
+

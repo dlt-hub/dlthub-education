@@ -21,4 +21,4 @@ def get_jaffle_shop_source_config():
     }
 
 # Standard limit for all resources
-RESOURCE_LIMIT = 100 
+RESOURCE_LIMIT = 50 
