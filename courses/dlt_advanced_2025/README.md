@@ -55,7 +55,7 @@ Test your skills with the **Advanced Certification Homework**: https://forms.gle
 ## Feedback & questions
 
 We love improving this course with your help.  
-Please share your thoughts: TBA on April 24
+Please share your thoughts: TBA 
 
 
 Need help or stuck on something?  
