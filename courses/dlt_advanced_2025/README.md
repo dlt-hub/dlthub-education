@@ -47,7 +47,7 @@ Bring your pipelines into production. Learn how to run dlt on AWS Lambda, GitHub
 You’ve finished the dlt Advanced Course — well done!  
 Test your skills with the **Advanced Certification Homework**: https://forms.gle/eDt2Tuuz6g7wNsJPA
 
-**Deadline:** May 26, 18:00 (CET)  
+**Deadline:** July 31, 18:00 (CET)  
 **Passing grade:** 70%+
 
 ---
