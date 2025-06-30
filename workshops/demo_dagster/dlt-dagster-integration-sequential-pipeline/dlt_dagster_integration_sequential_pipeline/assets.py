@@ -31,5 +31,6 @@ jaffle_shop_pipeline = dlt.pipeline(
     group_name="jaffle_shop",
 )
 def jaffle_shop_dlt_assets(context: AssetExecutionContext, dlt: DagsterDltResource):
+    # Ensure environment variables are loaded
     load_dotenv()
     yield from dlt.run(context=context)

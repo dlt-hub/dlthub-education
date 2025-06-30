@@ -8,6 +8,7 @@ from .jaffle_shop_parallel_pipeline import source
 from dotenv import load_dotenv
 
 def setup_bigquery_credentials():
+    # Ensure environment variables are loaded
     load_dotenv()
     credentials = {
         "project_id": os.getenv("DESTINATION__BIGQUERY__CREDENTIALS__PROJECT_ID"),

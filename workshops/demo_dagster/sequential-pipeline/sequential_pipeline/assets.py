@@ -16,8 +16,9 @@ logger = logging.getLogger(__name__)
 )
 def jaffle_shop_data() -> None:
     """Extract data from Jaffle Shop API and load it into BigQuery."""
-    logger.info("Starting Jaffle Shop data extraction...")
+    # Ensure environment variables are loaded
     load_dotenv()
+    logger.info("Starting Jaffle Shop data extraction...")
     credentials = {
         "project_id": os.getenv("DESTINATION__BIGQUERY__CREDENTIALS__PROJECT_ID"),
         "private_key": os.getenv("DESTINATION__BIGQUERY__CREDENTIALS__PRIVATE_KEY"),
