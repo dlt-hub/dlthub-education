@@ -136,6 +136,7 @@ logs/
 .DS_Store
 
 # temp
+.tmp*
 tmp
 **/tmp
 
@@ -147,3 +148,15 @@ docs/examples/**/test*.py
 
 # Ignore all .tmp files
 **/*.tmp
+.env
+
+# Sensitive files and directories
+.dlt/
+.cursor/
+dlthub-sandbox-6f4b18073864.json
+config/bigquery_credentials.json
+venv/
+.venv/
+*.db
+*.lock
+*.csv
