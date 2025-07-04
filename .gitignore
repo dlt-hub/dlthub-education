@@ -136,6 +136,7 @@ logs/
 .DS_Store
 
 # temp
+.tmp*
 tmp
 **/tmp
 
@@ -153,6 +154,9 @@ docs/examples/**/test*.py
 .dlt/
 .cursor/
 dlthub-sandbox-6f4b18073864.json
-config/bigquery_credentials.json\
+config/bigquery_credentials.json
 venv/
 .venv/
+*.db
+*.lock
+*.csv

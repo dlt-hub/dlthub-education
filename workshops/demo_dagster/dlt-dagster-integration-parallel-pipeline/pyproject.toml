@@ -5,23 +5,23 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.9,<3.13"
 dependencies = [
-    "dagster",
-    "dagster-cloud",
-]
-
-[project.optional-dependencies]
-dev = [
-    "dagster-webserver", 
-    "pytest",
+    "dagster==1.11.1",
+    "dagster-dlt>=0.27.1",
+    "dlt[bigquery,duckdb]>=1.12.1",
+    "pandas>=2.3.0",
+    "dagster-webserver",
+    "dagster-dg-cli[local]",
 ]
 
 [build-system]
-requires = ["setuptools"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
-[tool.dagster]
-module_name = "dlt_dagster_integration_parallel_pipeline.definitions"
-code_location_name = "dlt_dagster_integration_parallel_pipeline"
+[tool.dg]
+directory_type = "project"
 
-[tool.setuptools.packages.find]
-exclude=["dlt_dagster_integration_parallel_pipeline_tests"]
+[tool.dg.project]
+root_module = "dlt_dagster_integration_parallel_pipeline"
+registry_modules = [
+    "dlt_dagster_integration_parallel_pipeline.*",
+]

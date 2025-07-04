@@ -6,7 +6,7 @@ from dagster import (
 )
 from dagster_dlt import DagsterDltResource
 
-from .assets import assets
+from .defs.assets import assets
 
 MAX_WORKERS = 5
 

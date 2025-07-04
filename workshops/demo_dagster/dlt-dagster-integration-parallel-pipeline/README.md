@@ -10,39 +10,33 @@ Integrate a dlt pipeline with Dagster using the Dagster-dlt integration, running
 
 ### Install dlt and dependencies
 
+Go to the project folder:
 ```shell
-uv add "dlt[bigquery]" "dlt[duckdb]" pandas
+cd workshops/demo_dagster/dlt_dagster_integration_parallel_pipeline
+```
+Install dependencies from `pyproject.toml`:
+
+```shell
+uv sync
+```
+
+or
+```shell
+uv add "dlt[bigquery,duckdb]" pandas
 ```
 
 ### Install Dagster
-[Install Dagster with uv](https://docs.dagster.io/getting-started/installation):
 
-Just run the `create-dagster` command using uvx:
+You don't have to install Dagster, just use `uv`.
 
-```shell
-uvx -U create-dagster project my-project
-```
-
-To verify that Dagster is installed correctly, run the commands below. You should see the version number of dg in your environment.
-
-```shell
-cd my-project
-```
-
-```shell
-source .venv/bin/activate
-```
-
-```sh
-dg --version
-```
+[Install Dagster with uv](https://docs.dagster.io/getting-started/installation).
 
 
 ## Step 2: Install the `dagster-dlt` integration
 
 [Official documentation for dagster_dlt integration](https://docs.dagster.io/guides/build/components/integrations/dlt-component-tutorial).
 
-Add the `dagster-dlt` library to the project:
+Add the `dagster-dlt` library to the project (it's actually already installed through `uv sync`):
 
 ```shell
 uv add dagster-dlt
@@ -54,11 +48,11 @@ The dlt-Dagster integration allows you to use dlt (Data Load Tool) to easily ing
 
 [Data Load Tool (dlt)](https://dlthub.com/) is an open source library for creating efficient data pipelines. It offers features like secret management, data structure conversion, incremental updates, and pre-built sources and destinations, simplifying the process of loading messy data into well-structured datasets.
 
-### How the Integration Works
+### How the integration works
 
 The Dagster dlt integration uses multi-assets, where a single definition results in [multiple assets](https://docs.dagster.io/integrations/libraries/dlt/using-dlt-with-dagster). These assets are derived from the DltSource, and each dlt resource maps to Dagster assets.
 
-### Key Components
+### Key components
 
 The integration requires two main components:
 1. **dlt source**: Defines how to extract data from external systems.
@@ -70,7 +64,7 @@ The integration requires two main components:
 
 In this demo we create dlt source for [Jaffle Shop REST API](https://jaffle-shop.scalevector.ai/docs) using [REST API dlt source](https://dlthub.com/docs/dlt-ecosystem/verified-sources/rest_api/basic).
 
-Copy it from `dlt_dagster_integration_parallel_pipeline/jaffle_shop_source.py`
+Location:`dlt_dagster_integration_parallel_pipeline/defs/jaffle_shop_source.py`
 
 
 ### Assets
@@ -78,7 +72,7 @@ Copy it from `dlt_dagster_integration_parallel_pipeline/jaffle_shop_source.py`
 - Assets represent data that your pipelines produce and consume, and Dagster models them as first-class objects rather than just tasks.
 - An asset definition is a description, in code, of an asset that should exist and how to produce and update that asset.
 
-Copy them from `dlt_dagster_integration_parallel_pipeline/assets.py`
+Location: `dlt_dagster_integration_parallel_pipeline/defs/assets.py`
 
 ### Definitions
 
@@ -86,23 +80,23 @@ Copy them from `dlt_dagster_integration_parallel_pipeline/assets.py`
 - This allows Dagster to know exactly what's available to run in your specific project.
 - The Definitions object essentially tells Dagster: "Here's everything that's available to run in this project"
 
-Copy them from `dlt_dagster_integration_parallel_pipeline/definitions.py`
+Location: `dlt_dagster_integration_parallel_pipeline/definitions.py`
 
 ## Step 4: Test it locally
 At this point, you can list the Dagster definitions in your project with `dg list defs`. You should see the asset you just created:
 
 ```shell
-dg list defs
+uv run dg list defs
 ```
 You can also load and validate your Dagster definitions with `dg check defs`:
 ```shell
-dg check defs
+uv run dg check defs
 ```
 
 ## Step 5: Run the pipeline
 In the terminal, navigate to your project's root directory and run:
 ```shell
-dg dev
+uv run dg dev
 ```
 Open your web browser and navigate to http://localhost:3000, where you should see the Dagster UI.
 

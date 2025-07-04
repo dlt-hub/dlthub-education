@@ -3,7 +3,7 @@ from dagster import AssetExecutionContext
 from dagster_dlt import DagsterDltResource, dlt_assets
 from dotenv import load_dotenv
 
-from .jaffle_shop_source_config import dlt_source
+from .jaffle_shop_source import dlt_source
 
 # Standard limit for all resources
 RESOURCE_LIMIT = 5
