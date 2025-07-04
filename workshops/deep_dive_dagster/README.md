@@ -12,7 +12,7 @@ Integrate a dlt pipeline with Dagster using the Dagster-dlt integration, running
 
 Go to the project folder:
 ```shell
-cd workshops/demo_dagster/dlt_dagster_integration_parallel_pipeline
+cd workshops/deep_dive_dagster/dlt-dagster-integration-parallel-pipeline
 ```
 Install dependencies from `pyproject.toml`:
 
