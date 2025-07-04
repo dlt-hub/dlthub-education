@@ -144,3 +144,12 @@ local_cache/
 
 # test file for examples are generated and should not be committed
 docs/examples/**/test*.py
+.env
+
+# Sensitive files and directories
+.dlt/
+.cursor/
+dlthub-sandbox-6f4b18073864.json
+config/bigquery_credentials.json\
+venv/
+.venv/
