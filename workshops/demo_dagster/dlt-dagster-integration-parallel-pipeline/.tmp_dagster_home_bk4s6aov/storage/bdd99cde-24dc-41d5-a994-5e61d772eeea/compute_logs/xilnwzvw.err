@@ -1,7 +1,0 @@
-[32m2025-07-04 12:11:57 +0200[0m - dagster - [34mDEBUG[0m - jaffle_shop_parallel_job - bdd99cde-24dc-41d5-a994-5e61d772eeea - 39297 - LOGS_CAPTURED - Started capturing logs in process (pid: 39297).
-[32m2025-07-04 12:11:57 +0200[0m - dagster - [34mDEBUG[0m - jaffle_shop_parallel_job - bdd99cde-24dc-41d5-a994-5e61d772eeea - 39297 - jaffle_shop_items - STEP_START - Started execution of step "jaffle_shop_items".
-/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/google/cloud/bigquery/client.py:610: UserWarning: Cannot create BigQuery Storage client, the dependency google-cloud-bigquery-storage is not installed.
-  warnings.warn(
-[32m2025-07-04 12:12:18 +0200[0m - dagster - [34mDEBUG[0m - jaffle_shop_parallel_job - bdd99cde-24dc-41d5-a994-5e61d772eeea - 39297 - jaffle_shop_items - STEP_OUTPUT - Yielded output "dlt_rest_api_items" of type "Nothing". (Type check passed).
-[32m2025-07-04 12:12:18 +0200[0m - dagster - [34mDEBUG[0m - jaffle_shop_parallel_job - bdd99cde-24dc-41d5-a994-5e61d772eeea - 39297 - jaffle_shop_items - ASSET_MATERIALIZATION - Materialized value dlt_rest_api_items.
-[32m2025-07-04 12:12:18 +0200[0m - dagster - [34mDEBUG[0m - jaffle_shop_parallel_job - bdd99cde-24dc-41d5-a994-5e61d772eeea - 39297 - jaffle_shop_items - STEP_SUCCESS - Finished execution of step "jaffle_shop_items" in 20.35s.
