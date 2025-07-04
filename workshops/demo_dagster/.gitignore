@@ -17,3 +17,4 @@ dlthub-sandbox-6f4b18073864.json
 config/bigquery_credentials.json\
 venv/
 .venv/
+**/*.tmp
