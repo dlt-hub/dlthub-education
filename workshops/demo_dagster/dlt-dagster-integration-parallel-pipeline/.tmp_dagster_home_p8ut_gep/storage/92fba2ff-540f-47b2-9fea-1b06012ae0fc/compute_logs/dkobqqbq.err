@@ -1,0 +1,133 @@
+[32m2025-07-01 11:50:55 +0200[0m - dagster - [34mDEBUG[0m - jaffle_shop_parallel_job - 92fba2ff-540f-47b2-9fea-1b06012ae0fc - 23437 - LOGS_CAPTURED - Started capturing logs in process (pid: 23437).
+[32m2025-07-01 11:50:55 +0200[0m - dagster - [34mDEBUG[0m - jaffle_shop_parallel_job - 92fba2ff-540f-47b2-9fea-1b06012ae0fc - 23437 - jaffle_shop_items - STEP_START - Started execution of step "jaffle_shop_items".
+/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/google/cloud/bigquery/client.py:610: UserWarning: Cannot create BigQuery Storage client, the dependency google-cloud-bigquery-storage is not installed.
+  warnings.warn(
+[32m2025-07-01 11:51:01 +0200[0m - dagster - [34mERROR[0m - [31mjaffle_shop_parallel_job - 92fba2ff-540f-47b2-9fea-1b06012ae0fc - 23437 - jaffle_shop_items - STEP_FAILURE - Execution of step "jaffle_shop_items" failed.
+
+dagster._core.errors.DagsterExecutionInterruptedError
+
+Stack Trace:
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/dagster/_core/execution/plan/execute_plan.py", line 246, in dagster_event_sequence_for_step
+    yield from check.generator(step_events)
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/dagster/_core/execution/plan/execute_step.py", line 502, in core_dagster_event_sequence_for_step
+    for user_event in _step_output_error_checked_user_event_sequence(
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/dagster/_core/execution/plan/execute_step.py", line 183, in _step_output_error_checked_user_event_sequence
+    for user_event in user_event_sequence:
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/dagster/_core/execution/plan/execute_step.py", line 90, in _process_asset_results_to_events
+    for user_event in user_event_sequence:
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/dagster/_core/execution/plan/compute.py", line 187, in execute_core_compute
+    for step_output in _yield_compute_results(step_context, inputs, compute_fn, compute_context):
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/dagster/_core/execution/plan/compute.py", line 156, in _yield_compute_results
+    for event in iterate_with_context(
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/dagster/_utils/__init__.py", line 392, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "/Users/dlthubgtm/Desktop/Aashish/dlthub-education/workshops/demo_dagster/dlt-dagster-integration-parallel-pipeline/dlt_dagster_integration_parallel_pipeline/assets.py", line 33, in asset
+    yield from dlt.run(context=context)
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/dagster_dlt/dlt_event_iterator.py", line 77, in __next__
+    return next(self._inner_iterator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/dagster_dlt/resource.py", line 284, in _run
+    load_info = dlt_pipeline.run(dlt_source, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/dlt/pipeline/pipeline.py", line 222, in _wrap
+    step_info = f(self, *args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/dlt/pipeline/pipeline.py", line 271, in _wrap
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/dlt/pipeline/pipeline.py", line 716, in run
+    self.extract(
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/dlt/pipeline/pipeline.py", line 222, in _wrap
+    step_info = f(self, *args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/dlt/pipeline/pipeline.py", line 176, in _wrap
+    rv = f(self, *args, **kwargs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/dlt/pipeline/pipeline.py", line 162, in _wrap
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/dlt/pipeline/pipeline.py", line 271, in _wrap
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/dlt/pipeline/pipeline.py", line 468, in extract
+    self._extract_source(
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/dlt/pipeline/pipeline.py", line 1254, in _extract_source
+    load_id = extract.extract(
+              ^^^^^^^^^^^^^^^^
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/dlt/extract/extract.py", line 457, in extract
+    self._extract_single_source(
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/dlt/extract/extract.py", line 380, in _extract_single_source
+    for pipe_item in pipes:
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/dlt/extract/pipe_iterator.py", line 162, in __next__
+    pipe_item = self._get_source_item()
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/dlt/extract/pipe_iterator.py", line 277, in _get_source_item
+    pipe_item = next(gen)
+                ^^^^^^^^^
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/dlt/sources/rest_api/__init__.py", line 332, in paginate_resource
+    yield from client.paginate(
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/dlt/sources/helpers/rest_client/client.py", line 238, in paginate
+    response = self._send_request(request, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/dlt/sources/helpers/rest_client/client.py", line 144, in _send_request
+    return self.session.send(prepared_request, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/tenacity/__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/tenacity/__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/tenacity/__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/tenacity/__init__.py", line 400, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+                                     ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/tenacity/__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/dlt/sources/helpers/requests/session.py", line 61, in send
+    return super().send(request, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 1378, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/ssl.py", line 1278, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/ssl.py", line 1134, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/dagster/_utils/interrupts.py", line 83, in _new_signal_handler
+    raise error_cls()
+[0m

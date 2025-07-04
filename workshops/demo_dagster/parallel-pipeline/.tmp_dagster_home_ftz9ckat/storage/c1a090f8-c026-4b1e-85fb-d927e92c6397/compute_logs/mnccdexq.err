@@ -1,9 +1,0 @@
-[32m2025-06-30 13:57:48 +0200[0m - dagster - [34mDEBUG[0m - parallel_extraction_job - c1a090f8-c026-4b1e-85fb-d927e92c6397 - 8382 - LOGS_CAPTURED - Started capturing logs in process (pid: 8382).
-[32m2025-06-30 13:57:48 +0200[0m - dagster - [34mDEBUG[0m - parallel_extraction_job - c1a090f8-c026-4b1e-85fb-d927e92c6397 - 8382 - customers_parallel - STEP_START - Started execution of step "customers_parallel".
-/Users/dlthubgtm/Desktop/Aashish/Dagster Demo/Second Test/.venv/lib/python3.11/site-packages/google/cloud/bigquery/client.py:610: UserWarning: Cannot create BigQuery Storage client, the dependency google-cloud-bigquery-storage is not installed.
-  warnings.warn(
-[32m2025-06-30 13:58:03 +0200[0m - dagster - [34mDEBUG[0m - parallel_extraction_job - c1a090f8-c026-4b1e-85fb-d927e92c6397 - 8382 - customers_parallel - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
-[32m2025-06-30 13:58:03 +0200[0m - dagster - [34mDEBUG[0m - parallel_extraction_job - c1a090f8-c026-4b1e-85fb-d927e92c6397 - customers_parallel - Writing file at: /Users/dlthubgtm/Desktop/Aashish/dlthub-education/workshops/demo_dagster/parallel-pipeline/.tmp_dagster_home_ftz9ckat/storage/customers_parallel using PickledObjectFilesystemIOManager...
-[32m2025-06-30 13:58:03 +0200[0m - dagster - [34mDEBUG[0m - parallel_extraction_job - c1a090f8-c026-4b1e-85fb-d927e92c6397 - 8382 - customers_parallel - ASSET_MATERIALIZATION - Materialized value customers_parallel.
-[32m2025-06-30 13:58:03 +0200[0m - dagster - [34mDEBUG[0m - parallel_extraction_job - c1a090f8-c026-4b1e-85fb-d927e92c6397 - 8382 - customers_parallel - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
-[32m2025-06-30 13:58:03 +0200[0m - dagster - [34mDEBUG[0m - parallel_extraction_job - c1a090f8-c026-4b1e-85fb-d927e92c6397 - 8382 - customers_parallel - STEP_SUCCESS - Finished execution of step "customers_parallel" in 15.34s.
