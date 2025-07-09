@@ -6,6 +6,26 @@ Integrate a dlt pipeline with Dagster using the Dagster-dlt integration, running
 - **Processing Mode:** Parallel
 - **Integration:** Dagster-dlt integration (`dagster_dlt`, `dlt_assets`)
 
+
+
+## Run the Notebook Demo (Colab)
+
+You can follow along with the first part of the project directly in a hosted notebook:
+
+ **[Open the Colab notebook →](https://colab.research.google.com/drive/1XDVlaS2WzD1TKgsZOHOw9tEvNFPOmIzV?usp=sharing)**
+
+This notebook covers:
+- Creating a `dlt` pipeline using the Jaffle Shop API
+- Loading data into DuckDB
+- Inspecting the resulting tables
+
+The remaining integration and orchestration steps are demonstrated **live** or via local development.
+
+---
+
+## Step-by-Step Instructions
+
+
 ## Step 1: Install dlt and Dagster
 
 ### Install dlt and dependencies
