@@ -48,15 +48,8 @@ This notebook explores `dlt` states, what it collected and where this *extra* in
 You finished the dlt Fundamentals course! As a summary of everything we covered in this course, 
 there’s a **homework** quiz for you to go through. Hopefully it’ll refresh your memory on everything we covered. 
 
-Here you go: https://forms.gle/LRohLeRYKsfCfQaTA
+Here you go: https://dlthub.learnworlds.com/course/dlt-fundamentals
 
-Submit your application before **July 31st**, 2025, score at least **70% of the points**, and get certified!
-
-### Feedback
-
-We read all your feedback, and trying to apply your suggestions, so feel free to share your thoughts!
-
-Move your comments and ideas there: https://forms.gle/yVpNBvqRpPUmjeSU6
 
 ### Help
 
