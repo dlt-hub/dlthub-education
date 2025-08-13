@@ -4,6 +4,11 @@ In this repository we will store all materials for workshops, courses, etc.
 
 ## Courses
 
+**UPDATE:**
+We moved certification for Fundamentals and Advanced courses to our new learning platform.
+Link: https://dlthub.learnworlds.com/courses
+
+
 1. Holiday Self-Paced Course 2024: dlt Fundamentals:
    - Location: [courses/dlt_fundamentals_dec_2024](courses/dlt_fundamentals_dec_2024)
 2. Holiday Self-Paced Course 2025: dlt Advanced:
