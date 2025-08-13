@@ -7,6 +7,7 @@ In this repository we will store all materials for workshops, courses, etc.
 >**UPDATE:**
 >
 >We moved certification for Fundamentals and Advanced courses to our new learning platform.
+>
 >Link: https://dlthub.learnworlds.com/courses
 
 
