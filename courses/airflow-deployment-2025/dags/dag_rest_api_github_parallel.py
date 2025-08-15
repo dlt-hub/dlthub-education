@@ -54,9 +54,7 @@ def load_data_parallel():
     os.environ["DESTINATION__BIGQUERY__CREDENTIALS__CLIENT_EMAIL"] = Variable.get("bigquery_client_email")
     os.environ["DESTINATION__BIGQUERY__CREDENTIALS__PRIVATE_KEY"] = private_key
     
-    # Set GitHub token environment variable for the pipeline
-    os.environ["SOURCES__GITHUB_PIPELINE__GITHUB_SOURCE__GITHUB_TOKEN"] = Variable.get("github_token", "")
-
+ 
     # set `use_data_folder` to True to store temporary data on the `data` bucket. Use only when it does not fit on the local storage
     tasks = PipelineTasksGroup("pipeline_parallel", use_data_folder=False, wipe_local_data=True)
 

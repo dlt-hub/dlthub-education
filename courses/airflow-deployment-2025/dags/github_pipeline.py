@@ -1,6 +1,7 @@
 import dlt
 from dlt.sources.rest_api import rest_api_source
 import os
+from airflow.models import Variable
 
 # limit for number of pages - very conservative to avoid rate limits
 RESOURCE_LIMIT = 2
@@ -16,7 +17,7 @@ github_source = rest_api_source(
     {
         "client": {
             "base_url": BASE_URL,
-            "auth": {"token": dlt.secrets.get("sources.github_pipeline.github_source.github_token", "")}
+            "auth": {"token": Variable.get("github_token", "")}
         },
         "resource_defaults": {
             "endpoint": {

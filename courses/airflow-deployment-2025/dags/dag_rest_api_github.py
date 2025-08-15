@@ -50,8 +50,6 @@ def load_data():
     private_key = Variable.get("bigquery_private_key").replace("\\n", "\n")
     os.environ["REST_API_GITHUB__DESTINATION__BIGQUERY__CREDENTIALS__PRIVATE_KEY"] = private_key
     
-    # Set GitHub token environment variable for the pipeline
-    os.environ["SOURCES__GITHUB_PIPELINE__GITHUB_SOURCE__GITHUB_TOKEN"] = Variable.get("github_token", "")
     
     # set `use_data_folder` to True to store temporary data on the `data` bucket. Use only when it does not fit on the local storage
     tasks = PipelineTasksGroup("pipeline_decomposed", use_data_folder=False, wipe_local_data=True)
