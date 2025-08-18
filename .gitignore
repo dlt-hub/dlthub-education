@@ -154,9 +154,34 @@ docs/examples/**/test*.py
 .dlt/
 .cursor/
 dlthub-sandbox-6f4b18073864.json
+dlthub-sandbox-9fc18a11e48f.json
 config/bigquery_credentials.json
+simple_auth_manager_passwords.json.generated
 venv/
 .venv/
 *.db
+*.db-shm
+*.db-wal
 *.lock
 *.csv
+
+# Airflow specific sensitive files
+airflow.cfg
+airflow.db*
+simple_auth_manager_passwords.json*
+
+# Additional credential patterns
+*credentials*.json
+*service-account*.json
+*key*.json
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Environment variables and secrets
+.env*
+*.env
+secrets.toml
+secrets.yaml
+secrets.yml

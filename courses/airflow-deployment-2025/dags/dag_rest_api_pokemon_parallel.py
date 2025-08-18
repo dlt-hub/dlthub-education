@@ -83,4 +83,4 @@ def load_data_parallel():
 
 dag = load_data_parallel()
 
-# run: export AIRFLOW_HOME="/Users/dlthubgtm/Desktop/Aashish/Airflow 3.0 Sandbox" 
+# run: export AIRFLOW_HOME="/Users/dlthubgtm/Desktop/Aashish/Airflow 3.0 Sandbox/courses/airflow-deployment-2025" 

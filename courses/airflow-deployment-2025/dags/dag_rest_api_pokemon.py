@@ -71,7 +71,7 @@ def load_data():
     tasks.add_run(
         pipeline,
         pokemon_source,
-        decompose="none",  # Try without decomposition first
+        decompose="serialize",  # Try without decomposition first
         trigger_rule="all_done",
         retries=0,
     )
