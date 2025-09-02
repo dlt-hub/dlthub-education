@@ -30,10 +30,11 @@ def _set_env(md_db: str):
     os.environ["DESTINATION__MOTHERDUCK__CREDENTIALS__DATABASE"] = md_db
 
 @task(retries=2, log_prints=True)
-def run_resource(resource_name: str, md_db: str, start_date: str = None, end_date: str = None):
+def run_resource_in_task_pipeline(resource_name: str, md_db: str, start_date: str = None, end_date: str = None):
     """
-    Runs a specific resource from the GitHub API using the example pipeline configuration.
-    Supports backfilling (for forks resource) by setting start_date and end_date.
+    Runs a specific resource from the GitHub API in a dedicated task pipeline, named after the
+    resource, so that each task pipeline runs in isolation.
+    If resource is "forks", you can run with backfilling by setting start_date and end_date.
     
     Args:
         resource_name (str): Name of the GitHub resource to run.
@@ -83,11 +84,11 @@ def main(md_db: str = "dlt_test"):
     
     # Launch tasks concurrently (repos, contributors, issues, forks, releases)
 
-    a = run_resource.submit("repos", md_db)
-    b = run_resource.submit("contributors", md_db)
-    c = run_resource.submit("issues", md_db)
-    d = run_resource.submit("forks", md_db, start_date=start_iso, end_date=end_iso)
-    e = run_resource.submit("releases", md_db)
+    a = run_resource_in_task_pipeline.submit("repos", md_db)
+    b = run_resource_in_task_pipeline.submit("contributors", md_db)
+    c = run_resource_in_task_pipeline.submit("issues", md_db)
+    d = run_resource_in_task_pipeline.submit("forks", md_db, start_date=start_iso, end_date=end_iso)
+    e = run_resource_in_task_pipeline.submit("releases", md_db)
 
     # Wait for all tasks to complete and return results
     return a.result(), b.result(), c.result(), d.result(), e.result()
