@@ -1,4 +1,5 @@
 import modal
+from datetime import datetime
 
 app = modal.App("run-github-pipeline")
 dlt_image = modal.Image.debian_slim(python_version="3.10").run_commands(
@@ -6,6 +7,7 @@ dlt_image = modal.Image.debian_slim(python_version="3.10").run_commands(
     "apt-get install -y software-properties-common",
     "apt-add-repository non-free",
     "apt-add-repository contrib",
+    'pip install "dlt[duckdb]"',
     'pip install "dlt[bigquery]"',
 ).add_local_python_source("github_pipeline")
 
@@ -16,15 +18,15 @@ dlt_image = modal.Image.debian_slim(python_version="3.10").run_commands(
     schedule=modal.Period(minutes=1),
 
 )
-def run_pipeline(start_date = None,
-    end_date = None,):
+def run_pipeline(start_date: str| None = None, end_date: str | None = None):
+
     import dlt
     from github_pipeline import github_source
 
     print("Starting pipeline setup...")
     pipeline = dlt.pipeline(
         pipeline_name="github_pipeline",
-        destination="bigquery",
+        destination="duckdb",
         dataset_name="alena_github_data",
     )
     print("Pipeline created.")
@@ -43,10 +45,17 @@ def run_pipeline(start_date = None,
     load_info = pipeline.run(github_source)
     print("Pipeline run complete.")
     print("Load info:", load_info)
+
+    dataset = pipeline.dataset()
+    forks_df = dataset.forks.df()
+
+    assert forks_df.loc[:, "created_at"].min() >= datetime.fromisoformat(start_date), forks_df.loc[:, "created_at"].min()
+    assert forks_df.loc[:, "created_at"].max() <= datetime.fromisoformat(end_date), forks_df.loc[:, "created_at"].max()
+
     return load_info
 
 
 # Only run the pipeline if this script is executed directly
 @app.local_entrypoint()
-def main():
-    run_pipeline.remote()
+def main(start_date: str| None = None, end_date: str | None = None):
+    run_pipeline.remote(start_date, end_date)

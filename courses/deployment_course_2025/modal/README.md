@@ -41,6 +41,10 @@ def run_pipeline(resource):
 modal run github_pipeline_modal.py
 ```
 
+### Backfilling
+```shell
+modal run github_pipeline_modal_backfill.py --start-date 2025-08-01T00:00:00Z --end-date 2025-09-01T00:00:00Z
+```
 
 ### Deploy 
 ```shell
