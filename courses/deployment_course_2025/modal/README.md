@@ -43,7 +43,7 @@ modal run github_pipeline_modal.py
 
 ### Backfilling
 ```shell
-modal run github_pipeline_modal_backfill.py --start-date 2025-08-01T00:00:00Z --end-date 2025-09-01T00:00:00Z
+modal run github_pipeline_modal_backfill.py --start-date '2025-08-01 05:47:07+00:00' --end-date '2025-09-01 05:47:07+00:00'
 ```
 
 ### Deploy 

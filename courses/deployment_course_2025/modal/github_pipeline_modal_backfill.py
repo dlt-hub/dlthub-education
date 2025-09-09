@@ -2,7 +2,7 @@ import modal
 from datetime import datetime
 
 app = modal.App("run-github-pipeline")
-dlt_image = modal.Image.debian_slim(python_version="3.10").run_commands(
+dlt_image = modal.Image.debian_slim(python_version="3.12").run_commands(
     "apt-get update",
     "apt-get install -y software-properties-common",
     "apt-add-repository non-free",
@@ -26,7 +26,7 @@ def run_pipeline(start_date: str| None = None, end_date: str | None = None):
     print("Starting pipeline setup...")
     pipeline = dlt.pipeline(
         pipeline_name="github_pipeline",
-        destination="duckdb",
+        destination="bigquery",
         dataset_name="alena_github_data",
     )
     print("Pipeline created.")
@@ -42,15 +42,17 @@ def run_pipeline(start_date: str| None = None, end_date: str | None = None):
             )
         )
 
-    load_info = pipeline.run(github_source)
+    load_info = pipeline.run(github_source, write_disposition="replace")
     print("Pipeline run complete.")
     print("Load info:", load_info)
 
     dataset = pipeline.dataset()
     forks_df = dataset.forks.df()
+    print(forks_df.loc[:, "created_at"].min(), forks_df.loc[:, "created_at"].max())
 
-    assert forks_df.loc[:, "created_at"].min() >= datetime.fromisoformat(start_date), forks_df.loc[:, "created_at"].min()
-    assert forks_df.loc[:, "created_at"].max() <= datetime.fromisoformat(end_date), forks_df.loc[:, "created_at"].max()
+    if start_date and end_date:
+        assert forks_df.loc[:, "created_at"].min() >= datetime.fromisoformat(start_date), forks_df.loc[:, "created_at"].min()
+        assert forks_df.loc[:, "created_at"].max() <= datetime.fromisoformat(end_date), forks_df.loc[:, "created_at"].max()
 
     return load_info
 

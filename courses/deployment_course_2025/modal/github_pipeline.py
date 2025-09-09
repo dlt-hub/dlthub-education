@@ -40,7 +40,7 @@ config: RESTAPIConfig = {
                 },
                 "incremental": {
                     "cursor_path": "updated_at",
-                    "initial_value": pendulum.today().subtract(days=30).to_iso8601_string()
+                    "initial_value": pendulum.today().subtract(days=30).isoformat()
                 }
           },
         },
@@ -54,7 +54,7 @@ config: RESTAPIConfig = {
             },
             "incremental": {
                     "cursor_path": "created_at",
-                    "initial_value": "2025-07-01T00:00:00Z",
+                    "initial_value": "2025-07-01 05:47:07+00:00",
                     "row_order": "asc"
             }
           },

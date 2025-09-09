@@ -1,7 +1,7 @@
 import modal
 
 app = modal.App("run-github-pipeline")
-dlt_image = modal.Image.debian_slim(python_version="3.10").run_commands(
+dlt_image = modal.Image.debian_slim(python_version="3.12").run_commands(
     "apt-get update",
     "apt-get install -y software-properties-common",
     "apt-add-repository non-free",
