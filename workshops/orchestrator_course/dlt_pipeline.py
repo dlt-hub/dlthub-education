@@ -38,7 +38,7 @@ config: RESTAPIConfig = {
                 },
                 "incremental": {
                     "cursor_path": "updated_at",
-                    "initial_value": pendulum.today().subtract(days=30).to_iso8601_string()
+                    "initial_value": "2025-07-01T00:00:00Z"
                 }
           },
         },
@@ -53,7 +53,6 @@ config: RESTAPIConfig = {
                 "incremental": {           #backfill
                     "cursor_path": "created_at",  
                     "initial_value": "2025-07-01T00:00:00Z",
-                    "end_value": "2025-08-01T00:00:00Z",
                     "row_order": "asc"
                 }
           },
@@ -69,12 +68,12 @@ config: RESTAPIConfig = {
 
 github_source = rest_api_source(config)
 
-# pipeline = dlt.pipeline(
-#         pipeline_name="github_repos_issues",
-#         destination="duckdb",
-#         dataset_name="github_data",
-#         progress="log"  # Add logging as per rule recommendation
-#     )
+pipeline = dlt.pipeline(
+        pipeline_name="github_repos_issues",
+        destination="bigquery",
+        dataset_name="github_data",
+        progress="log"  # Add logging as per rule recommendation
+    )
 
-# load_info = pipeline.run(github_source)
-# print(load_info)
+load_info = pipeline.run(github_source)
+print(load_info)
