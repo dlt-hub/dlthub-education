@@ -1,0 +1,48 @@
+# Airflow generated files
+airflow.cfg
+airflow.db
+webserver_config.py
+standalone_admin_password.txt
+airflow-webserver.pid
+unittests.cfg
+
+# Logs
+logs/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# dlt
+.dlt/
+*.duckdb
+*.wal
+secrets.toml
+
+# Environment variables
+.env
+.env.local
+
+# Astro
+astro/
+.astro/
+
+packages.txt
