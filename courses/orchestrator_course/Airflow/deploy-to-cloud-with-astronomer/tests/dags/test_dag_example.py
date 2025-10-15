@@ -1,8 +1,9 @@
 """Example DAGs test. This test ensures that all Dags have tags, retries set to two, and no import errors. This is an example pytest and may not be fit the context of your DAGs. Feel free to add and remove tests."""
 
-import os
 import logging
+import os
 from contextlib import contextmanager
+
 import pytest
 from airflow.models import DagBag
 
