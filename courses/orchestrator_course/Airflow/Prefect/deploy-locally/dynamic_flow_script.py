@@ -13,12 +13,13 @@ def run_resource(resource_name: str):
         pipeline_name=f"github_dynamic_{resource_name}",
         destination="bigquery",
         dataset_name="demo_dynamic_github",
-        progress="log"
+        progress="log",
     )
 
     info = pipeline.run(source)
     print(f"{resource_name} -> {info}")
     return info
+
 
 @flow(log_prints=True)
 def main():
@@ -28,6 +29,7 @@ def main():
     c = run_resource("releases")
 
     return a, b, c
+
 
 if __name__ == "__main__":
     main.serve(name="dynamic-deployment")

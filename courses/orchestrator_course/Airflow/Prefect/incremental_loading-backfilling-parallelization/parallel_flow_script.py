@@ -5,19 +5,21 @@ from prefect_gcp import GcpCredentials
 import os
 from prefect.task_runners import ThreadPoolTaskRunner
 
+
 def set_github_pat_env():
 
     pat = GitHubCredentials.load("github-pat").token.get_secret_value()
-    os.environ["SOURCES__ACCESS_TOKEN"] = pat 
+    os.environ["SOURCES__ACCESS_TOKEN"] = pat
+
 
 def make_bq_destination():
 
-    #get service account info
+    # get service account info
     gcp = GcpCredentials.load("gcp-creds")
     creds = gcp.service_account_info.get_secret_value() or {}
-    #get project id
+    # get project id
     project = creds.get("project_id")
-    #create a bigquery destination
+    # create a bigquery destination
     return dlt.destinations.bigquery(credentials=creds, project_id=project)
 
 
@@ -32,19 +34,20 @@ def run_resource(resource_name: str, bq_dest: dlt.destinations.bigquery):
         pipeline_name=f"github_remote_demo_{resource_name}",
         destination=bq_dest,
         dataset_name="demo_remote_github",
-        progress="log"
+        progress="log",
     )
 
     info = pipeline.run(source)
     print(f"{resource_name} -> {info}")
     return info
 
+
 @flow(task_runner=ThreadPoolTaskRunner(max_workers=5), log_prints=True)
 def main():
 
-    #set env variables
+    # set env variables
     set_github_pat_env()
-    #create bigquery destination
+    # create bigquery destination
     bq_dest = make_bq_destination()
 
     a = run_resource.submit("repos", bq_dest)
@@ -54,6 +57,7 @@ def main():
     e = run_resource.submit("forks", bq_dest)
 
     return a.result(), b.result(), c.result(), d.result(), e.result()
+
 
 if __name__ == "__main__":
     main()
