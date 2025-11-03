@@ -1,0 +1,4 @@
+locations:
+- code_source:
+    module_name: dagster_quickstart.definitions
+  location_name: dagster_quickstart
