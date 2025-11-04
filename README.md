@@ -4,6 +4,13 @@ In this repository we will store all materials for workshops, courses, etc.
 
 ## Courses
 
+>**UPDATE:**
+>
+>We moved certification for the courses to our new learning platform.
+>
+>Link: https://dlthub.learnworlds.com/courses
+
+
 1. Holiday Self-Paced Course 2024: dlt Fundamentals:
    - Location: [courses/dlt_fundamentals_dec_2024](courses/dlt_fundamentals_dec_2024)
 2. Holiday Self-Paced Course 2025: dlt Advanced:
@@ -37,7 +44,9 @@ In this repository we will store all materials for workshops, courses, etc.
      - [Workshop Slides](https://docs.google.com/presentation/d/1I5AR0OGPOlCYT3Zdwx3ufxMXuOeljlmPQXH3cof0U34/edit?usp=sharing)
      - [RACI Template](https://docs.google.com/spreadsheets/d/1814LCgVQikV_IwbiLzBUpsidnUtLXbnECU0K37EOrkc/edit?usp=sharing)
      - [Scalability Assessment](https://thescalableway.scoreapp.com/)
-   - Certification (Deadline is July 18th, 2025): [Google Form]( https://forms.gle/RL2u4kssWcf3o9pG7) 
+   - Certification (Deadline is July 18th, 2025): [Google Form]( https://forms.gle/RL2u4kssWcf3o9pG7)
+1. Workshop "First steps to running dlt in production by The Scalable Way" (2025-07-24)
+   - Location: [Youtube recording](https://www.youtube.com/watch?v=_Jvv4Cu3ITM)
 
 ## Webinars
 1. Webinar GDPR/HIPAA September 2024:

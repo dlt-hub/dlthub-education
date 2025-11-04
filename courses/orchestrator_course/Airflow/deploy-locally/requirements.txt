@@ -1,0 +1,1 @@
+dlt[bigquery]>=1.16.0
