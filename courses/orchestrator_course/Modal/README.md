@@ -1,11 +1,3 @@
-```shell
-pip install "dlt[duckdb]"
-```
-
-```shell
-python pokemon_pipeline.py
-```
-
 Sign Up or Login to modal.com
 
 Download and configure the Python client
@@ -22,7 +14,15 @@ The second command creates an API token by authenticating through your web brows
 
 follow the instructions in quick Start
 
-Add dlt to requirements: https://modal.com/docs/examples/webscraper#add-dependencies
+Add dlt and github source to requirements: https://modal.com/docs/examples/webscraper#add-dependencies
+
+```py
+dlt_image = modal.Image.debian_slim(python_version="3.12").run_commands(
+    "apt-get update",
+    'pip install "dlt[bigquery]"',
+).add_local_python_source("github_pipeline")
+```
+
 
 ### Credentials
 

@@ -3,9 +3,6 @@ import modal
 app = modal.App("run-github-pipeline")
 dlt_image = modal.Image.debian_slim(python_version="3.12").run_commands(
     "apt-get update",
-    "apt-get install -y software-properties-common",
-    "apt-add-repository non-free",
-    "apt-add-repository contrib",
     'pip install "dlt[bigquery]"',
 ).add_local_python_source("github_pipeline")
 
@@ -33,7 +30,6 @@ def run_pipeline():
     return load_info
 
 
-# Only run the pipeline if this script is executed directly
 @app.local_entrypoint()
 def main():
     run_pipeline.remote()

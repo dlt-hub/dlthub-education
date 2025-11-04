@@ -3,9 +3,6 @@ import modal
 app = modal.App("run-github-pipeline-parallel")
 dlt_image = modal.Image.debian_slim(python_version="3.12").run_commands(
     "apt-get update",
-    "apt-get install -y software-properties-common",
-    "apt-add-repository non-free",
-    "apt-add-repository contrib",
     'pip install "dlt[bigquery]"',
 ).add_local_python_source("github_pipeline")
 

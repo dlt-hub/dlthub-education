@@ -4,10 +4,6 @@ from datetime import datetime
 app = modal.App("run-github-pipeline")
 dlt_image = modal.Image.debian_slim(python_version="3.12").run_commands(
     "apt-get update",
-    "apt-get install -y software-properties-common",
-    "apt-add-repository non-free",
-    "apt-add-repository contrib",
-    'pip install "dlt[duckdb]"',
     'pip install "dlt[bigquery]"',
 ).add_local_python_source("github_pipeline")
 
@@ -57,7 +53,6 @@ def run_pipeline(start_date: str| None = None, end_date: str | None = None):
     return load_info
 
 
-# Only run the pipeline if this script is executed directly
 @app.local_entrypoint()
 def main(start_date: str| None = None, end_date: str | None = None):
     run_pipeline.remote(start_date, end_date)
