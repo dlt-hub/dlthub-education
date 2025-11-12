@@ -1,0 +1,37 @@
+id: kestra_sequential_script
+namespace: tutorial
+
+triggers:
+  - id: every_day
+    type: io.kestra.plugin.core.trigger.Schedule
+    cron: "0 0 * * *"          # every day
+    timezone: "Europe/Berlin"
+
+tasks:
+  - id: build_image
+    type: io.kestra.plugin.docker.Build
+    dockerfile: |
+      FROM python:3.13-slim
+      RUN python -m pip install --upgrade pip
+      RUN pip install "dlt[bigquery]"
+    tags:
+      - kestra/python-dlt:latest
+
+  - id: run_github_pipeline
+    type: io.kestra.plugin.scripts.python.Commands
+    containerImage: "{{ outputs.build_image.imageId }}"
+    namespaceFiles:
+      enabled: true
+    env:
+      # source auth (e.g., GitHub token)
+      SOURCES__ACCESS_TOKEN: "{{ kv('SOURCES__ACCESS_TOKEN') }}"
+
+      # destination: explicit + single JSON blob for creds
+      DESTINATION__NAME: bigquery
+      DESTINATION__BIGQUERY__CREDENTIALS: "{{ kv('DESTINATION__BIGQUERY__CREDENTIALS') }}"
+
+      # optional but recommended for consistency
+      DESTINATION__BIGQUERY__DATASET_NAME: "github_sequential"
+      DESTINATION__BIGQUERY__LOCATION: "EU"
+    commands:
+      - python kestra_pipeline.py

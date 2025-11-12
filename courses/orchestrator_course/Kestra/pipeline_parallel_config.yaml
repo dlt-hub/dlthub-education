@@ -1,0 +1,34 @@
+id: kestra_parallel_script_duckdb
+namespace: tutorial
+
+triggers:
+  - id: every_day
+    type: io.kestra.plugin.core.trigger.Schedule
+    cron: "0 0 * * *"
+    timezone: "Europe/Berlin"
+
+tasks:
+  - id: build_image
+    type: io.kestra.plugin.docker.Build
+    dockerfile: |
+      FROM python:3.13-slim
+      RUN pip install dlt[bigquery]
+    tags:
+      - kestra/python-dlt:latest
+
+  - id: fan_out_controller
+    type: io.kestra.plugin.core.flow.ForEach
+    values: "{{ ['repos','contributors','issues','forks','releases'] }}"
+    concurrencyLimit: 5
+    tasks:
+      - id: run_one_resource
+        type: io.kestra.plugin.scripts.python.Commands
+        containerImage: "{{ outputs.build_image.imageId }}"
+        namespaceFiles:
+          enabled: true
+        env:
+          SOURCES__ACCESS_TOKEN: "{{ kv('SOURCES__ACCESS_TOKEN') }}"
+          DESTINATION__BIGQUERY__CREDENTIALS: "{{ kv('DESTINATION__BIGQUERY__CREDENTIALS') }}"
+
+        commands:
+          - python kestra_pipeline_parallel_duckdb.py --resource {{ taskrun.value }}
