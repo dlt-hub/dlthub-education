@@ -1,10 +1,11 @@
-id: kestra_parallel_script_duckdb
+id: kestra_pipeline_run_parallel
 namespace: tutorial
+
 
 triggers:
   - id: every_day
     type: io.kestra.plugin.core.trigger.Schedule
-    cron: "0 0 * * *"
+    cron: "0 0 * * *"          # every day
     timezone: "Europe/Berlin"
 
 tasks:
@@ -12,23 +13,27 @@ tasks:
     type: io.kestra.plugin.docker.Build
     dockerfile: |
       FROM python:3.13-slim
-      RUN pip install dlt[bigquery]
+      RUN python -m pip install --upgrade pip
+      RUN pip install "dlt[bigquery]"
     tags:
       - kestra/python-dlt:latest
 
   - id: fan_out_controller
     type: io.kestra.plugin.core.flow.ForEach
-    values: "{{ ['repos','contributors','issues','forks','releases'] }}"
+    values: "{{ ['repos', 'contributors', 'issues', 'forks', 'releases'] }}"
     concurrencyLimit: 5
-    tasks:
+    tasks: 
       - id: run_one_resource
         type: io.kestra.plugin.scripts.python.Commands
         containerImage: "{{ outputs.build_image.imageId }}"
         namespaceFiles:
           enabled: true
-        env:
+        env: 
           SOURCES__ACCESS_TOKEN: "{{ kv('SOURCES__ACCESS_TOKEN') }}"
-          DESTINATION__BIGQUERY__CREDENTIALS: "{{ kv('DESTINATION__BIGQUERY__CREDENTIALS') }}"
-
-        commands:
-          - python kestra_pipeline_parallel_duckdb.py --resource {{ taskrun.value }}
+          DESTINATION__BIGQUERY__CREDENTIALS: " {{ kv('DESTINATION__BIGQUERY__CREDENTIALS') }}"
+          ISSUES_INITIAL_VALUE: "{{ kv('ISSUES_INITIAL_VALUE') }}"
+          DLT_PIPELINE_DIR: "{{ kv('DLT_PIPELINE_DIR') }}"
+          
+        commands: 
+          - python kestra_pipeline_parallel.py --resource {{ taskrun.value }}
+      

@@ -1,5 +1,6 @@
-id: kestra_sequential_script
+id: kestra_pipeline_run
 namespace: tutorial
+
 
 triggers:
   - id: every_day
@@ -23,15 +24,8 @@ tasks:
     namespaceFiles:
       enabled: true
     env:
-      # source auth (e.g., GitHub token)
       SOURCES__ACCESS_TOKEN: "{{ kv('SOURCES__ACCESS_TOKEN') }}"
-
-      # destination: explicit + single JSON blob for creds
-      DESTINATION__NAME: bigquery
       DESTINATION__BIGQUERY__CREDENTIALS: "{{ kv('DESTINATION__BIGQUERY__CREDENTIALS') }}"
 
-      # optional but recommended for consistency
-      DESTINATION__BIGQUERY__DATASET_NAME: "github_sequential"
-      DESTINATION__BIGQUERY__LOCATION: "EU"
     commands:
       - python kestra_pipeline.py
