@@ -109,7 +109,7 @@ github_source = github_source.with_resources(args.resource)
 
 if __name__ == "__main__":
     pipeline = dlt.pipeline(
-        pipeline_name="github_pipeline_kestra",
+        pipeline_name=f"github_pipeline_kestra_{args.resource}",
         destination="bigquery",
         dataset_name="github_data_kestra_parallel",
         progress="log",  # Add logging as per rule recommendation
