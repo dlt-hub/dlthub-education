@@ -2,35 +2,39 @@ import dlt
 import os
 import github_pipeline
 
-def run_resource(resource_name: str, start_date: str | None = None, end_date: str | None = None):
+
+def run_resource(
+    resource_name: str, start_date: str | None = None, end_date: str | None = None
+):
     base_source = github_pipeline.github_source
 
-    #apply incremental only if explicitly passed
+    # apply incremental only if explicitly passed
     if start_date is not None and end_date is not None:
-        #dynamically get the resource
-        resource = getattr(base_source,resource_name)
+        # dynamically get the resource
+        resource = getattr(base_source, resource_name)
         resource.apply_hints(
             incremental=dlt.sources.incremental(
                 "created_at",
                 initial_value=start_date,
                 end_value=end_date,
-                row_order="asc"
+                row_order="asc",
             )
         )
 
     selected_source = base_source.with_resources(resource_name)
 
-    #initialize pipeline
+    # initialize pipeline
     pipeline = dlt.pipeline(
         pipeline_name=f"orchestra_github_bck_{resource_name}",
         destination="bigquery",
         dataset_name="orchestra_github_bck",
-        progress="log"
+        progress="log",
     )
 
     info = pipeline.run(selected_source)
     print(f"{resource_name} -> {info}")
     return info
+
 
 def main():
 
@@ -43,9 +47,6 @@ def main():
 
     return a, b, c
 
+
 if __name__ == "__main__":
     main()
-    
-
-
-    
