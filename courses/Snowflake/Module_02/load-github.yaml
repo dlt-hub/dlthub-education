@@ -1,0 +1,4 @@
+spec:
+  containers:
+    - name: load-github
+      image: kgiotue-wn98412.registry.snowflakecomputing.com/dlt_data/github_dlt_spcs/image_repo/load_github:latest
