@@ -1,4 +1,4 @@
-# Module 3: Running dlt Inside Snowflake with Snowpark Container Services
+# Module 2: Running dlt Inside Snowflake with Snowpark Container Services
 
 ## Introduction
 
