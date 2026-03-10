@@ -180,7 +180,7 @@ Create `load-github.yaml`:
 spec:
   containers:
     - name: load-github
-      image: kgiotue-wn98412.registry.snowflakecomputing.com/dlt_data/github_dlt_spcs/image_repo/load_github:latest
+      image: <your-account-identifier>.registry.snowflakecomputing.com/dlt_data/github_dlt_spcs/image_repo/load_github:latest
 ```
 
 ---
@@ -346,7 +346,7 @@ Successfully tagged github-pipeline:latest
 ```bash
 # Tag with your Snowflake registry path
 docker tag github-pipeline:latest \
-  kgiotue-wn98412.registry.snowflakecomputing.com/dlt_data/github_dlt_spcs/image_repo/load_github:latest
+  <your-account-identifier>.registry.snowflakecomputing.com/dlt_data/github_dlt_spcs/image_repo/load_github:latest
 ```
 
 ### 5.4 Configure Snowflake CLI Connection
@@ -417,12 +417,12 @@ snow spcs image-registry login
 
 ```bash
 # Push image to Snowflake registry
-docker push kgiotue-wn98412.registry.snowflakecomputing.com/dlt_data/github_dlt_spcs/image_repo/load_github:latest
+docker push <your-account-identifier>.registry.snowflakecomputing.com/dlt_data/github_dlt_spcs/image_repo/load_github:latest
 ```
 
 **Expected output:**
 ```
-The push refers to repository [kgiotue-wn98412.registry.snowflakecomputing.com/dlt_data/github_dlt_spcs/image_repo/load_github]
+The push refers to repository [<your-account-identifier>.registry.snowflakecomputing.com/dlt_data/github_dlt_spcs/image_repo/load_github]
 latest: digest: sha256:abc123... size: 1234
 ```
 
