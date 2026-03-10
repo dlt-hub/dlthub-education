@@ -1,0 +1,1 @@
+dlt[snowflake,s3]>=1.23.0
