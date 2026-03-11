@@ -2,10 +2,10 @@
 
 ## Introduction
 
-In Module 1, you learned to use S3 as external staging for faster Snowflake loads. Now, we'll take it a step further by running the entire dlt pipeline **inside Snowflake** using Snowpark Container Services (SPCS).
+In Module 1, you learned to use S3 as external staging for faster Snowflake loads. In this module, we will take it a step further by containerizing a dlt pipeline with Docker, deploying it inside Snowflake using Snowpark Container Services (SPCS), and scheduling it with Snowflake Tasks for fully automated, native orchestration.
 
 **Why run dlt inside Snowflake?**
-- **Cost Efficient**: SPCS containers cost ~6% of the smallest warehouse
+- **Cost Efficient**: SPCS containers are cost efficient
 - **No External Infrastructure**: No need to deploy to AWS Lambda, Airflow, or other orchestration tools
 - **Native Orchestration**: Trigger pipelines using Snowflake Tasks
 - **Secure**: Credentials never leave Snowflake
@@ -21,7 +21,7 @@ Before starting, ensure you have:
 
 1. **Python 3.11+** and **dlt** installed in your virtual environment
 2. **Docker Desktop** installed and running
-3. **Snowflake account** with `ADMIN` privileges
+3. **Snowflake account** with `ACCOUNTADMIN` privileges
 4. **Completed Module 01**
    - Working dlt pipeline with external staging (S3)
    - `DLT_LOADER_ROLE` configured
@@ -634,6 +634,12 @@ FROM TABLE(DLT_DATA.INFORMATION_SCHEMA.TASK_HISTORY(
 ))
 ORDER BY SCHEDULED_TIME DESC;
 ```
+
+---
+
+## Performance Tip
+
+Using Parquet files instead of JSONL when loading into Snowflake (`loader_file_format = "parquet"`) makes loading large files significantly faster. The combination of S3 staging + Parquet file format reduced load times dramatically in our testing. If you're working with large datasets, this is highly recommended.
 
 ---
 
