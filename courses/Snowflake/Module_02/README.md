@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In Module 2, you learned to use S3 as external staging for faster Snowflake loads. Now, we'll take it a step further by running the entire dlt pipeline **inside Snowflake** using Snowpark Container Services (SPCS).
+In Module 1, you learned to use S3 as external staging for faster Snowflake loads. Now, we'll take it a step further by running the entire dlt pipeline **inside Snowflake** using Snowpark Container Services (SPCS).
 
 **Why run dlt inside Snowflake?**
 - **Cost Efficient**: SPCS containers cost ~6% of the smallest warehouse
@@ -75,7 +75,7 @@ access_token = "ghp_your_github_token"
 
 [destination.snowflake.credentials]
 database = "DLT_DATA"
-password = "your_password"
+password = "YOUR_PASSWORD"
 username = "YOUR_USERNAME"
 host = "YOUR_ACCOUNT_IDENTIFIER"
 warehouse = "COMPUTE_WH"
@@ -86,7 +86,7 @@ aws_access_key_id = "YOUR_AWS_ACCESS_KEY"
 aws_secret_access_key = "YOUR_AWS_SECRET_KEY"
 
 [destination.filesystem]
-bucket_url = "s3://gtm-demos/snowflake-demo/"
+bucket_url = "s3://your-bucket-name/your-path/"
 ```
 
 Your `.dlt/config.toml` — add the `[destination.snowflake]` section if not already present:
@@ -180,7 +180,7 @@ Create `load-github.yaml`:
 spec:
   containers:
     - name: load-github
-      image: kgiotue-wn98412.registry.snowflakecomputing.com/dlt_data/github_dlt_spcs/image_repo/load_github:latest
+      image: <your-account-identifier>.registry.snowflakecomputing.com/dlt_data/github_dlt_spcs/image_repo/load_github:latest
 ```
 
 ---
@@ -346,7 +346,7 @@ Successfully tagged github-pipeline:latest
 ```bash
 # Tag with your Snowflake registry path
 docker tag github-pipeline:latest \
-  kgiotue-wn98412.registry.snowflakecomputing.com/dlt_data/github_dlt_spcs/image_repo/load_github:latest
+  <your-account-identifier>.registry.snowflakecomputing.com/dlt_data/github_dlt_spcs/image_repo/load_github:latest
 ```
 
 ### 5.4 Configure Snowflake CLI Connection
@@ -370,9 +370,9 @@ mkdir -p ~/.snowflake
 # Create config file (use single quotes for password with special characters)
 cat > ~/.snowflake/config.toml << 'EOF'
 [connections.default]
-account = "***********"
-user = "*******"
-password = "your_password_here"
+account = "YOUR_ACCOUNT_IDENTIFIER"
+user = "YOUR_USERNAME"
+password = "YOUR_PASSWORD"
 role = "DLT_LOADER_ROLE"
 warehouse = "COMPUTE_WH"
 database = "DLT_DATA"
@@ -384,7 +384,7 @@ chmod 0600 ~/.snowflake/config.toml
 ```
 
 **Important:**
-- Replace the password with your actual password
+- Replace the account identifier, username, and password with your actual values
 - Use single quotes to handle special characters in password
 
 ### 5.5 Test Snowflake CLI Connection
@@ -417,12 +417,12 @@ snow spcs image-registry login
 
 ```bash
 # Push image to Snowflake registry
-docker push kgiotue-wn98412.registry.snowflakecomputing.com/dlt_data/github_dlt_spcs/image_repo/load_github:latest
+docker push <your-account-identifier>.registry.snowflakecomputing.com/dlt_data/github_dlt_spcs/image_repo/load_github:latest
 ```
 
 **Expected output:**
 ```
-The push refers to repository [kgiotue-wn98412.registry.snowflakecomputing.com/dlt_data/github_dlt_spcs/image_repo/load_github]
+The push refers to repository [<your-account-identifier>.registry.snowflakecomputing.com/dlt_data/github_dlt_spcs/image_repo/load_github]
 latest: digest: sha256:abc123... size: 1234
 ```
 
@@ -435,7 +435,7 @@ latest: digest: sha256:abc123... size: 1234
 
 **Option B: Via SQL**
 ```sql
-PUT file:///Users/shreyas/Desktop/SPCS_DEMO/load-github.yaml
+PUT file:///path/to/load-github.yaml
 @DLT_DATA.GITHUB_DLT_SPCS.SPEC_STAGE
 AUTO_COMPRESS=FALSE
 OVERWRITE=TRUE;
