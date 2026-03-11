@@ -23,7 +23,7 @@ Before starting, ensure you have:
 2. **Docker Desktop** installed and running
 3. **Snowflake account** with `ACCOUNTADMIN` privileges
 4. **Completed Module 01**
-   - Working dlt pipeline with external staging (S3)
+   - Working dlt pipeline (external staging with S3 is optional)
    - `DLT_LOADER_ROLE` configured
 
 ---
@@ -50,7 +50,7 @@ pipeline = dlt.pipeline(
 pipeline = dlt.pipeline(
     pipeline_name="github_api_spcs_pipeline",
     destination='snowflake',
-    staging="filesystem",
+    staging="filesystem", #optional
     dataset_name="github_spcs_data",
     progress="log",
 )
