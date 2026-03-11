@@ -593,7 +593,18 @@ LIMIT 5;
 
 ## Step 9: Schedule Pipeline with Snowflake Tasks (Optional)
 
+### 9.0 Grant Execute Task Privilege
+
+```sql
+USE ROLE ACCOUNTADMIN;
+
+-- Allow DLT_LOADER_ROLE to run scheduled tasks
+GRANT EXECUTE TASK ON ACCOUNT TO ROLE DLT_LOADER_ROLE;
+```
+
 ### 9.1 Create Scheduled Task
+
+**Important:** You must create this task using `DLT_LOADER_ROLE`, not `ACCOUNTADMIN`. The task runs under the role that creates it, and `DLT_LOADER_ROLE` owns the stage and has the necessary grants. Creating the task under `ACCOUNTADMIN` will cause "Insufficient privileges to operate on stage" errors.
 
 ```sql
 USE ROLE DLT_LOADER_ROLE;
@@ -603,12 +614,16 @@ CREATE OR REPLACE TASK DLT_DATA.GITHUB_DLT_SPCS.TASK_LOAD_GITHUB
 WAREHOUSE = COMPUTE_WH
 SCHEDULE = 'USING CRON 0 * * * * UTC'  -- Every hour at minute 0
 AS
-EXECUTE JOB SERVICE
-IN COMPUTE POOL CP_DLT_PIPELINE
-NAME = DLT_DATA.GITHUB_DLT_SPCS.JOB_LOAD_GITHUB_SCHEDULED
-EXTERNAL_ACCESS_INTEGRATIONS = (EAI_GITHUB_DLT)
-FROM @DLT_DATA.GITHUB_DLT_SPCS.SPEC_STAGE
-SPECIFICATION_FILE = 'load-github.yaml';
+BEGIN
+  -- Drop previous job service to avoid "Object already exists" errors
+  DROP SERVICE IF EXISTS DLT_DATA.GITHUB_DLT_SPCS.JOB_LOAD_GITHUB_SCHEDULED;
+  EXECUTE JOB SERVICE
+  IN COMPUTE POOL CP_DLT_PIPELINE
+  NAME = DLT_DATA.GITHUB_DLT_SPCS.JOB_LOAD_GITHUB_SCHEDULED
+  EXTERNAL_ACCESS_INTEGRATIONS = (EAI_GITHUB_DLT)
+  FROM @DLT_DATA.GITHUB_DLT_SPCS.SPEC_STAGE
+  SPECIFICATION_FILE = 'load-github.yaml';
+END;
 
 -- Activate the task
 ALTER TASK DLT_DATA.GITHUB_DLT_SPCS.TASK_LOAD_GITHUB RESUME;
