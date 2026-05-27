@@ -1,5 +1,5 @@
 import dlt
-from dlt.sources.rest_api import RESTAPIConfig, rest_api_source
+from dlt.sources.rest_api import RESTAPIConfig, rest_api_resources
 
 config: RESTAPIConfig = {
     "client": {
@@ -64,7 +64,10 @@ config: RESTAPIConfig = {
     ],
 }
 
-github_source = rest_api_source(config)
+@dlt.source
+def github_source():
+    return rest_api_resources(config)
+
 
 if __name__ == "__main__":
     pipeline = dlt.pipeline(
@@ -74,5 +77,5 @@ if __name__ == "__main__":
         progress="log",  # Add logging as per rule recommendation
     )
 
-    load_info = pipeline.run(github_source)
+    load_info = pipeline.run(github_source())
     print(load_info)
