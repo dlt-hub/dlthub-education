@@ -2,6 +2,8 @@
 
 In this repository we will store all materials for workshops, courses, etc.
 
+> We launched **dltHub** in March 2026. You can now run your dlt pipelines on a managed, agent-native platform with transformations, data quality and observability built in. [Learn more](https://dlthub.com/) or [deploy your first pipeline](https://dlthub.com/docs/hub/getting-started/onboarding).
+
 ## Courses
 
 >**UPDATE:**
@@ -52,3 +54,19 @@ In this repository we will store all materials for workshops, courses, etc.
 1. Webinar GDPR/HIPAA September 2024:
    - Location: [webinars/gdpr_hipaa](webinars/gdpr_hipaa)
 
+## Run it in production with dltHub
+
+[dltHub](https://dlthub.com/) is an agent-native data engineering platform built around `dlt`. It uses the same sources, destinations, and pipelines you already write, and adds what you need to run them in production:
+
+- **Agent-native development**: build pipelines from prompts with Claude Code, Codex, or Cursor, with per-source context files and scaffolding commands
+- **[Transformations](https://dlthub.com/docs/hub/transformations)** and **[data quality checks](https://dlthub.com/docs/hub/data-quality)** on the data you load
+- **[Managed infrastructure](https://dlthub.com/docs/hub/pipeline-operations/overview)** for pipelines, notebooks, and data apps, with `dev` and `prod` profiles and one-command deploys
+- **[Observability](https://dlthub.com/docs/hub/ingestion/dashboard)**: monitor runs and troubleshoot from the workspace dashboard
+
+`dlt` stays open source under the Apache 2.0 license. dltHub is a commercial product governed by the [dltHub License](https://dlthub.com/docs/hub/license).
+
+**[Deploy your first pipeline →](https://dlthub.com/docs/hub/getting-started/onboarding)** One command sets up a workspace, connects it to dltHub, and has your coding agent deploy and run a sample pipeline:
+
+```sh
+uvx dlthub-start@latest
+```
